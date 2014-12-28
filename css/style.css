@@ -2,10 +2,7 @@
 
 
 #menu li {
-	padding-left: 5px;
-	padding-right: 0px;
-	margin-left: 0px;
-	margin-right: 30px;
+	padding: 15px;
 	font-size: 1.1em;
 	list-style-type: none;
 	display: inline;
@@ -21,6 +18,5 @@
 
 #topSection {
   min-width: 500px;
-  margin-left: 0px;
-  margin-right: 50px;
+  margin-left: 15px;
 }
