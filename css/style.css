@@ -18,14 +18,12 @@
 #menuItem:hover {
 	background: black;
 	color: white;
-	text-decoration: none;	
 }
 #menuItem:active{
 	/*blah*/
 }
 
 #menu li {
-	border: 1px solid black;
 	padding: 15px;
 	font-size: 1.1em;
 	list-style-type: none;
