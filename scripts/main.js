@@ -79,11 +79,11 @@ function contact() {
 
 	string += "<ul>\n";
 	string += "<li> <strong> Email </strong>";
-	string += "<a href=\"mailto:jasperforest@sandiego.edu?\"> Jasperforest@sandiego.edu </li>\n"
+	string += "<a href=\"mailto:jasperforest@sandiego.edu?\"> Jasperforest@sandiego.edu </a> </li>\n"
 	string += "<li> <strong> Phone </strong>";
 	string += "+1 (831) 239 7476 </li>\n";
 	string += "<li> <strong> Linkedin </strong>";
-	string += "<a href=\"www.linkedin.com/pub/jasper-forest/\"> www.linkedin.com/pub/jasper-forest/ </li>\n";
+	string += "<a href=\"www.linkedin.com/pub/jasper-forest/\"> www.linkedin.com/pub/jasper-forest/ </a> </li>\n";
 
 	return string;
 }
