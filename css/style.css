@@ -8,6 +8,10 @@
 	font-size: 1em;
 }
 
+#main {
+
+}
+
 .menuItem{
 
 }
@@ -15,7 +19,9 @@
 a.menuItem:link{
 	text-decoration: none;
 }
-
+a.menuItem:active{
+	text-decoration: none;
+}
 a.menuItem:visited {
 	text-decoration: none;
 }
@@ -23,9 +29,7 @@ a.menuItem:hover {
 	background: black;
 	color: white;
 }
-a.menuItem:active{
-	/*blah*/
-}
+
 
 #menu li {
 	padding: 15px;

@@ -45,12 +45,12 @@ function initLoad(){
 	// Which page is being loaded
 	
 	if (url.search("Contact") != -1) {
-		document.getElementById('Main').innerHTML = "<p>Contact</p>"; 
+		document.getElementById('main').innerHTML = "<p>Contact</p>"; 
 	}
 	else if(url.search("Projects") != -1){
-		document.getElementById('Main').innerHTML = "<p>Projects</p>"; 
+		document.getElementById('main').innerHTML = "<p>Projects</p>"; 
 	}
 	else {
-		document.getElementById('Main').innerHTML = "<p>Resume</p>"; 
+		document.getElementById('main').innerHTML = "<p>Resume</p>"; 
 	}
 }
