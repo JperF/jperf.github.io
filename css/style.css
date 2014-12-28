@@ -4,7 +4,6 @@
 	height: auto;
 	margin: 0px;
 	padding: 0px;
-	color: black;
 	font-family:  Futura, "Trebuchet MS", Arial, sans-serif;
 	font-weight: 100;
 	font-size: 1em;
@@ -12,9 +11,9 @@
 }
 
 .contact {
-
+	padding: 15px;
+	margin: 15px;
 	font-size: .85em;
-
 }
 
 #main {
