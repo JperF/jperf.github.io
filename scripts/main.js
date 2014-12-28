@@ -1,6 +1,6 @@
 // Main javascript 
 
-var menu_items = ["Resume", "Projects", "Github", "Contact"];
+var menu_items = ["Contact", "Github", "Projects", "Resume"];
 
 function initLoad(){
 	
