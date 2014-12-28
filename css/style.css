@@ -24,22 +24,22 @@
 	padding: 5px;
 }
 
-a.menuItem{
+.menuItem{
 	color: black;
 	height: auto;
 	width: auto;
 }
 
-a.menuItem:link{
+.menuItem:link{
 	text-decoration: none;
 }
-a.menuItem:active{
+.menuItem:active{
 	text-decoration: none; 
 }
-a.menuItem:visited {
+.menuItem:visited {
 	text-decoration: none;
 }
-a.menuItem:hover {
+.menuItem:hover {
 	background-color: black;
 	color: white;
 }
