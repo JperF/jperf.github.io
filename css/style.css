@@ -8,6 +8,10 @@
 	font-size: 1em;
 }
 
+.menuItem{
+
+}
+
 a.menuItem:link{
 	text-decoration: none;
 }
