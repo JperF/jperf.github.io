@@ -11,7 +11,7 @@ var url = document.URL;
 function initLoad(){
 
 	url = document.URL;
-
+	alert(url);
 	// Load top menu
 	// Clear current fill
 	document.getElementById('menu').innerHTML = "";
