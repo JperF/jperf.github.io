@@ -18,16 +18,16 @@ function initLoad(){
 		var menu_name = menu_items[i];
 		var item;
 		if (menu_name.search("Github") != -1) {
-			item ="<li class=\"menu_items\">\n" + "<a href=\"https://github.com/JPERF\">\n"
-					+ menu_name + "\n</a>" + "\n</li>";
+			item = "<a href=\"https://github.com/JPERF\">\n" + "<li class=\"menu_items\">\n"
+					+ menu_name + "\n</li>"+ "\n</a>";
 		}
 		else if(menu_name.search("Jasper Forest - Web Developer") != -1){
-			item ="<li class=\"menu_items\">\n" + "<a href=\"#/\">\n"
-					+ menu_name + "\n</a>" + "\n</li>";
+			item ="<a href=\"#/\">\n" +"<li class=\"menu_items\">\n"
+			 +  menu_name  + "\n</li>"+ "\n</a>";
 		}
 		else{
-			item ="<li class=\"menu_items\">\n" + "<a href=\"#/" + menu_name + "\">\n"
-					+ menu_name + "\n</a>" + "\n</li>";
+			item ="<a href=\"#/" + "<li class=\"menu_items\">\n" + menu_name + "\">\n"
+					+ menu_name  + "\n</li>"+ "\n</a>";
 		}
 		document.getElementById('menu').innerHTML += item; 
 	};
