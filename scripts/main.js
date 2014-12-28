@@ -26,7 +26,7 @@ function initLoad(){
 			 +  menu_name  + "\n</li>"+ "\n</a>";
 		}
 		else{
-			item ="<a href=\"#/" + "<li class=\"menu_items\">\n" + menu_name + "\">\n"
+			item ="<a href=\"#/" + menu_name + "\">\n" + "<li class=\"menu_items\">\n" 
 					+ menu_name  + "\n</li>"+ "\n</a>";
 		}
 		document.getElementById('menu').innerHTML += item; 
