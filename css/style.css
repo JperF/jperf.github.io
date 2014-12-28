@@ -26,8 +26,8 @@
 
 .menuItem{
 	color: black;
-	height: auto;
 	width: auto;
+	height: 53px;
 }
 
 .menuItem:link{
@@ -40,8 +40,8 @@
 	text-decoration: none;
 }
 .menuItem:hover {
-	height: 53px;
 	width: auto;
+	height: auto;
 	background-color: black;
 	color: green;
 }
