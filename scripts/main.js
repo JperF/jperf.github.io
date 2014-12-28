@@ -23,11 +23,11 @@ function initLoad(){
 					+ menu_name + "\n</li>"+ "\n</a>";
 		}
 		else if(menu_name.search("Jasper Forest - Web Developer") != -1){
-			item ="<li class=\"menu_items\">\n"
+			item ="<li id=\"nohover\" class=\"menu_items\">\n"
 			 +  menu_name  + "\n</li>";
 		}
 		else{
-			item ="<a href=\"#/" + menu_name + "\">\n <li class=\"menu_items\"" ;
+			item ="<a href=\"#/" + menu_name + "\">\n <li";
 			if(url.search(menu_items[i]) != -1){
 				item += "style=\"background-color:black; color:white;\"";
 			}
