@@ -25,7 +25,7 @@ function initLoad(){
 
 	// Which page is being loaded
 	var url = document.URL;
-	alert(url);
+
 	if (url.search("Contact") != -1) {
 		alert("Contact");
 	}
