@@ -16,16 +16,6 @@ a:visited {
 	text-decoration: none;
 }
 
-a:hover {
-	text-decoration: none;
-	color: white;
-	background-color: black;
-}
-
-a:active {
-	text-decoration: none;
-	background-color: black;
-}
 
 #menu li {
 	border: 1px solid black;
@@ -36,6 +26,13 @@ a:active {
 	float: left;
 }
 #menu li:hover{
+	text-decoration: none;
+	color: white;
+	background-color: black;
+}
+#menu li:active {
+	text-decoration: none;
+	color: white;
 	background-color: black;
 }
 
