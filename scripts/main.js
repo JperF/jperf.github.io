@@ -26,9 +26,9 @@ function initLoad(){
 	};
 
 	// Which page is being loaded
-	
+	url = document.URL;
 	if (url.search("Contact") != -1) {
-		alert("Contact");
+		alert("Contact"); 
 	}
 	else if(url.search("Projects") != -1){
 		alert("Projects");
