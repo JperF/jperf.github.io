@@ -16,10 +16,10 @@ a:visited {
 	text-decoration: none;
 }
 
-#nohover:hover {
+#menuItem:hover {
 	background: white;
 	color: black;
-	text-decoration: none;
+	text-decoration: none;	
 }
 
 #menu li {
@@ -30,11 +30,7 @@ a:visited {
 	display: inline;
 	float: left;
 }
-#menu li:hover{
-	text-decoration: none;
-	color: white;
-	background-color: black;
-}
+
 #menu li:active {
 	text-decoration: none;
 	color: white;
