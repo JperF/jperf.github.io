@@ -40,6 +40,8 @@
 	text-decoration: none;
 }
 .menuItem:hover {
+	height: 53px;
+	width: auto;
 	background-color: black;
 	color: green;
 }
