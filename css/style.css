@@ -1,5 +1,8 @@
 /* css styles */
-
+. {
+	margin: 0px;
+	padding: 0px;
+}
 
 #menu li {
 	padding: 15px;
