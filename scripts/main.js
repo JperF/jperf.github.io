@@ -28,14 +28,13 @@ function initLoad(){
 			 +  menu_name  + "\n</li>"+ "\n</a>";
 		}
 		else{
-			item ="<a href=\"#/" + menu_name + "\"";
+			item ="<a href=\"#/" + menu_name + "\">\n <li class=\"menu_items\"" ;
 
 			if(url.search(menu_items[i] != 1)){
-				alert(url);
 				item += "style=\"background-color:black; color:white;\"";
 			}
 
-			item += ">\n" + "<li class=\"menu_items\">\n" 
+			item +=  ">\n" 
 					+ menu_name  + "\n</li>"+ "\n</a>";
 		}
 		document.getElementById('menu').innerHTML += item; 
