@@ -19,7 +19,7 @@ function initLoad(){
 		var menu_name = menu_items[i];
 		var item;
 		if (menu_name.search("Github") != -1) {
-			item = "<a href=\"https://github.com/JPERF\">\n" + "<li class=\"menu_items\">\n"
+			item = "<a href=\"https://github.com/JPERF\" class=\"menu_items\">\n" + "<li>\n"
 					+ menu_name + "\n</li>"+ "\n</a>";
 		}
 		else if(menu_name.search("Jasper Forest - Web Developer") != -1){
@@ -27,7 +27,7 @@ function initLoad(){
 			 +  menu_name  + "\n</li>"+ "\n</a>";
 		}
 		else{
-			item ="<a href=\"#/" + menu_name + "\">\n <li class=\"menu_items\"" ;
+			item ="<a href=\"#/" + menu_name + "\" class=\"menu_items\">\n <li" ;
 			if(url.search(menu_items[i]) != -1){
 				item += "style=\"background-color:black; color:white;\"";
 			}
