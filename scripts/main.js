@@ -11,12 +11,18 @@ var url = document.URL;
 function initLoad(){
 
 	// Load top menu
+	// Clear current fill
 	document.getElementById('menu').innerHTML = "";
+	// Populates 
 	for (var i = menu_items.length - 1; i >= 0; i--) {
 		var menu_name = menu_items[i];
 		var item;
 		if (menu_name.search("Github") != -1) {
 			item ="<li class=\"menu_items\">\n" + "<a href=\"https://github.com/JPERF\">\n"
+					+ menu_name + "\n</a>" + "\n</li>";
+		}
+		else if(menu_name.search("Jasper Forest - Web Developer") != -1){
+			item ="<li class=\"menu_items\">\n" + "<a href=\"#/Resume\">\n"
 					+ menu_name + "\n</a>" + "\n</li>";
 		}
 		else{
