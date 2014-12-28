@@ -28,8 +28,7 @@ function initLoad(){
 		}
 		else{
 			item ="<a href=\"#/" + menu_name + "\">\n <li class=\"menu_items\"" ;
-			if(url.search(menu_items[i]) != 1){
-				alert(url.search(menu_items[i]));
+			if(url.search(menu_items[i]) != -1){
 				item += "style=\"background-color:black; color:white;\"";
 			}
 
