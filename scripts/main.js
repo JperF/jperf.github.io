@@ -1,6 +1,6 @@
 // Main javascript 
 
-var menu_items = ["Contact", "Github", "Projects", "Resume", "Jasper Forest Web Developer"];
+var menu_items = ["Contact", "Github", "Projects", "Resume", "Jasper Forest - Web Developer"];
 
 function initLoad(){
 	for (var i = menu_items.length - 1; i >= 0; i--) {
