@@ -27,10 +27,11 @@ function initLoad(){
 			 +  menu_name  + "\n</li>"+ "\n</a>";
 		}
 		else{
-			item ="<a href=\"#/" + menu_name + "\" class=\"menuItem\">\n <li" ;
+			item ="<a href=\"#/" + menu_name + "\"";
 			if(url.search(menu_items[i]) != -1){
-				item += "style=\"background-color:black; color:white;\"";
+			 	item += "class=\"menuItem\">\n <li style=\"background-color:black; color:white;\"";
 			}
+
 
 			item +=  ">\n" 
 					+ menu_name  + "\n</li>"+ "\n</a>";
