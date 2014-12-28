@@ -22,7 +22,7 @@ function initLoad(){
 					+ menu_name + "\n</a>" + "\n</li>";
 		}
 		else if(menu_name.search("Jasper Forest - Web Developer") != -1){
-			item ="<li class=\"menu_items\">\n" + "<a href=\"#/Resume\">\n"
+			item ="<li class=\"menu_items\">\n" + "<a href=\"#/\">\n"
 					+ menu_name + "\n</a>" + "\n</li>";
 		}
 		else{
