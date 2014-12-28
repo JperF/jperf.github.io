@@ -8,18 +8,18 @@
 	font-size: 1em;
 }
 
-#menuItem:link{
+a.menuItem:link{
 	text-decoration: none;
 }
 
-#menuItem:visited {
+a.menuItem:visited {
 	text-decoration: none;
 }
-#menuItem:hover {
+a.menuItem:hover {
 	background: black;
 	color: white;
 }
-#menuItem:active{
+a.menuItem:active{
 	/*blah*/
 }
 
@@ -39,6 +39,7 @@
 }
 
 #topSection {
+	x`
 	border: 1px solid black;
 	min-width: 500px;
 	margin-left: 15px;
