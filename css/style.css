@@ -9,7 +9,8 @@
 }
 
 #main {
-
+	margin: 5px;
+	padding: 5px;
 }
 
 .menuItem{
@@ -20,7 +21,7 @@ a.menuItem:link{
 	text-decoration: none;
 }
 a.menuItem:active{
-	text-decoration: none;
+	text-decoration: none; 
 }
 a.menuItem:visited {
 	text-decoration: none;
@@ -47,7 +48,8 @@ a.menuItem:hover {
 }
 
 #topSection {
-	x`
+	width: auto;
+	height: 30px;
 	border: 1px solid black;
 	min-width: 500px;
 	margin-left: 15px;
