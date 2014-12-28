@@ -16,8 +16,8 @@
 	text-decoration: none;
 }
 #menuItem:hover {
-	background: white;
-	color: black;
+	background: black;
+	color: white;
 	text-decoration: none;	
 }
 #menuItem:active{
