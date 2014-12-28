@@ -61,10 +61,29 @@ function initLoad(){
 	}
 }
 
+function listCreator(list){
+	var string = "";
+	var len = list.length;
+
+	for (var i = len - 1; i >= 0; i--) {
+	
+		list[i]
+	
+	};
+
+	return string;
+}
+
 function contact() {
 	var string = "";
 
-	string += "<h1> Contact </h1>";
+	string += "<ul>\n";
+	string += "<li> <strong> Email </strong>";
+	string += "<a href=\"mailto:jasperforest@sandiego.edu?\"> Jasperforest@sandiego.edu </li>\n"
+	string += "<li> <strong> Phone </strong>";
+	string += "+1 (831) 239 7476 </li>\n";
+	string += "<li> <strong> Linkedin </strong>";
+	string += "<a href=\"www.linkedin.com/pub/jasper-forest/\"> www.linkedin.com/pub/jasper-forest/ </li>\n";
 
 	return string;
 }
@@ -80,7 +99,8 @@ function project() {
 function resume(){
 	var string = "";
 
-	string += "<h1> Resume </h1>";
+	string += "<h4>Languages / Libraries</h4>\n";
+	string += listCreator(languages_libraries);
 
 	return string;
 }
