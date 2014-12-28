@@ -31,6 +31,7 @@ function initLoad(){
 			item ="<a href=\"#/" + menu_name + "\"";
 
 			if(url.search(menu_items[i] != 1)){
+				alert(url);
 				item += "style=\"background-color:black; color:white;\"";
 			}
 
