@@ -9,6 +9,7 @@
 	font-size: 1.1em;
 	list-style-type: none;
 	display: inline;
+	float: left;
 }
 
 #menu {
