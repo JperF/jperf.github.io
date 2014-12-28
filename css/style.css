@@ -1,5 +1,7 @@
 /* css styles */
 * {
+	width: auto;
+	height: auto;
 	margin: 0px;
 	padding: 0px;
 	color: black;
@@ -49,8 +51,8 @@ a.menuItem:hover {
 
 #topSection {
 	width: auto;
-	height: auto;
+	height: 50px;
 	padding-left: 20px;
-	border-bottom: 1px solid black;
+	border: 1px solid black;
 	min-width: 500px;
 }
