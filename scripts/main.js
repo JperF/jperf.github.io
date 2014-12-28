@@ -44,13 +44,43 @@ function initLoad(){
 
 	// Which page is being loaded
 	
+	var main_page;
+
 	if (url.search("Contact") != -1) {
-		document.getElementById('main').innerHTML = "<p>Contact</p>"; 
+
+		main_page = contact();
+		document.getElementById('main').innerHTML = main_page; 
 	}
 	else if(url.search("Projects") != -1){
-		document.getElementById('main').innerHTML = "<p>Projects</p>"; 
+		main_page = project();
+		document.getElementById('main').innerHTML = main_page; 
 	}
 	else {
-		document.getElementById('main').innerHTML = "<p>Resume</p>"; 
+		main_page = resume();
+		document.getElementById('main').innerHTML = main_page; 
 	}
+}
+
+function contact() {
+	var string = "";
+
+	string += "<h1> Contact </h1>";
+
+	return string;
+}
+
+function project() {
+	var string = "";
+
+	string += "<h1> Projects </h1>";
+
+	return string;
+}
+
+function resume(){
+	var string = "";
+
+	string += "<h1> Resume </h1>";
+
+	return string;
 }
