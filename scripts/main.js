@@ -1,7 +1,7 @@
 // Main javascript 
 
 function initLoad(){
-
-	//document.getElementById("main") = "<p> dog </p>";
+	
+	document.getElementById('menu').innerHTML = "<li> test </li> <li> test1 </li>";
 	alert("loaded");
 }
