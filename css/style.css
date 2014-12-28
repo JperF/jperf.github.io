@@ -26,6 +26,8 @@
 
 .menuItem{
 	color: black;
+	height: auto;
+	width: auto;
 }
 
 a.menuItem:link{
