@@ -31,10 +31,10 @@ function initLoad(){
 			item ="<a href=\"#/" + menu_name + "\"";
 
 			if(url.search(menu_items[i] != 1)){
-				items += "style=\"background-color:black; color:white;\"";
+				item += "style=\"background-color:black; color:white;\"";
 			}
 
-			items += ">\n" + "<li class=\"menu_items\">\n" 
+			item += ">\n" + "<li class=\"menu_items\">\n" 
 					+ menu_name  + "\n</li>"+ "\n</a>";
 		}
 		document.getElementById('menu').innerHTML += item; 
