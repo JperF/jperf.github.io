@@ -8,14 +8,13 @@
 	font-size: 1em;
 }
 
-a:link {
+#menuItem:link{
 	text-decoration: none;
 }
 
-a:visited {
+#menuItem:visited {
 	text-decoration: none;
 }
-
 #menuItem:hover {
 	background: white;
 	color: black;

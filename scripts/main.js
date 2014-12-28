@@ -36,17 +36,17 @@ function initLoad(){
 					+ menu_name  + "\n</li>"+ "\n</a>";
 		}
 		document.getElementById('menu').innerHTML += item; 
-	};
+	}
 
 	// Which page is being loaded
 	
 	if (url.search("Contact") != -1) {
-		document.getElementById('Main').innerHTML = "Contact"; 
+		document.getElementById('Main').innerHTML = "<p>Contact</p>"; 
 	}
 	else if(url.search("Projects") != -1){
-		document.getElementById('Main').innerHTML = "Projects"; 
+		document.getElementById('Main').innerHTML = "<p>Projects</p>"; 
 	}
 	else {
-		document.getElementById('Main').innerHTML = "Resume"; 
+		document.getElementById('Main').innerHTML = "<p>Resume</p>"; 
 	}
 }
