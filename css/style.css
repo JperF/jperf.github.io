@@ -59,6 +59,7 @@ a.menuItem:hover {
 }
 
 #topSection {
+	color:black;
 	width: auto;
 	height: 53px;
 	padding-left: 20px;
