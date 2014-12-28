@@ -11,6 +11,7 @@ var url = document.URL;
 function initLoad(){
 
 	// Load top menu
+	document.getElementById('menu').innerHTML = "";
 	for (var i = menu_items.length - 1; i >= 0; i--) {
 		var menu_name = menu_items[i];
 		var item;
