@@ -35,4 +35,8 @@ function initLoad(){
 	else {
 		alert("Resume");
 	}
+
+	while (true){
+		url = document.URL;
+	}
 }
