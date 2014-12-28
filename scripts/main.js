@@ -11,7 +11,6 @@ var url = document.URL;
 function initLoad(){
 
 	url = document.URL;
-	alert(url);
 	// Load top menu
 	// Clear current fill
 	document.getElementById('menu').innerHTML = "";
@@ -29,8 +28,8 @@ function initLoad(){
 		}
 		else{
 			item ="<a href=\"#/" + menu_name + "\">\n <li class=\"menu_items\"" ;
-
 			if(url.search(menu_items[i] != 1)){
+				alert(url);
 				item += "style=\"background-color:black; color:white;\"";
 			}
 
