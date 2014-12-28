@@ -35,12 +35,12 @@ function initLoad(){
 	// Which page is being loaded
 	url = document.URL;
 	if (url.search("Contact") != -1) {
-		alert("Contact"); 
+		document.getElementById('Main').innerHTML = "Contact"; 
 	}
 	else if(url.search("Projects") != -1){
-		alert("Projects");
+		document.getElementById('Main').innerHTML = "Projects"; 
 	}
 	else {
-		alert("Resume");
+		document.getElementById('Main').innerHTML = "Resume"; 
 	}
 }
