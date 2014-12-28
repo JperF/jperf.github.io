@@ -2,6 +2,6 @@
 
 function initLoad(){
 
-	document.getElementById("main") = "<p> dog </p>";
+	//document.getElementById("main") = "<p> dog </p>";
 	alert("loaded");
 }
