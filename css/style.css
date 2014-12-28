@@ -15,6 +15,7 @@ a:visited {
 
 a:hover {
 	text-decoration: none;
+	color: white;
 	background-color: black;
 }
 
@@ -24,6 +25,7 @@ a:active {
 }
 
 #menu li {
+	border: 1px solid black;
 	padding: 15px;
 	font-size: 1.1em;
 	list-style-type: none;
