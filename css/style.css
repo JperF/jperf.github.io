@@ -35,6 +35,9 @@ a:active {
 	display: inline;
 	float: left;
 }
+#menu li:hover{
+	background-color: black;
+}
 
 #menu {
 	text-align: center;
