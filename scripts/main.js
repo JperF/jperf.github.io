@@ -4,7 +4,7 @@ var menu_items = ["Contact", "Github", "Projects", "Resume", "Jasper Forest Web 
 
 function initLoad(){
 	for (var i = menu_items.length - 1; i >= 0; i--) {
-		var item ="<li>\n" + menu_items[i] + "\n</li>";
+		var item ="<li class=\"menu_items\">\n" + menu_items[i] + "\n</li>";
 		document.getElementById('menu').innerHTML += item; 
 	};
 
