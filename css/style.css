@@ -38,7 +38,7 @@ a.menuItem:visited {
 	text-decoration: none;
 }
 a.menuItem:hover {
-	background: black;
+	background-color: black;
 	color: white;
 }
 
