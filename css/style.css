@@ -21,19 +21,13 @@
 	text-decoration: none;	
 }
 
-#menu li {
+#menuItem li {
 	border: 1px solid black;
 	padding: 15px;
 	font-size: 1.1em;
 	list-style-type: none;
 	display: inline;
 	float: left;
-}
-
-#menu li:active {
-	text-decoration: none;
-	color: white;
-	background-color: black;
 }
 
 #menu {
