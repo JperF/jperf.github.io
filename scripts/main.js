@@ -10,11 +10,29 @@ function initLoad(){
 
 	// Load top menu
 	for (var i = menu_items.length - 1; i >= 0; i--) {
-		var item ="<li class=\"menu_items\">\n" + menu_items[i] + "\n</li>";
+		var menu_name = menu_items[i];
+		var item;
+		if (menu_name.search("Github") != -1) {
+			item ="<li class=\"menu_items\">\n" + "<a href=\"https://github.com/JPERF\">\n"
+					+ menu_name + "\n</a>" + "\n</li>";
+		}
+		else{
+			item ="<li class=\"menu_items\">\n" + "<a href=\"#/" + menu_name + "\">\n"
+					+ menu_name + "\n</a>" + "\n</li>";
+		}
 		document.getElementById('menu').innerHTML += item; 
 	};
 
+	// Which page is being loaded
 	var url = document.URL;
 	alert(url);
-
+	if (url.search("Contact") != -1) {
+		alert("Contact");
+	}
+	else if(url.search("Projects") != -1){
+		alert("Projects");
+	}
+	else {
+		alert("Resume");
+	}
 }
