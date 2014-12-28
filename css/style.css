@@ -39,7 +39,7 @@
 }
 
 #topSection {
-	border-bottom: 1px solid black;
-  min-width: 500px;
-  margin-left: 15px;
+	border: 1px solid black;
+	min-width: 500px;
+	margin-left: 15px;
 }
