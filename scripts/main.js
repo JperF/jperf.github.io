@@ -6,6 +6,8 @@ var menu_items = ["Contact", "Github", "Projects",
 var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 				"OpenGL", "Python", "CSS", "HTML", "Git"];
 
+var url = document.URL;
+
 function initLoad(){
 
 	// Load top menu
@@ -24,8 +26,7 @@ function initLoad(){
 	};
 
 	// Which page is being loaded
-	var url = document.URL;
-
+	
 	if (url.search("Contact") != -1) {
 		alert("Contact");
 	}
@@ -34,9 +35,5 @@ function initLoad(){
 	}
 	else {
 		alert("Resume");
-	}
-
-	while (true){
-		url = document.URL;
 	}
 }
