@@ -62,6 +62,8 @@
 }
 
 #menu {
+	margin:0px;
+	padding: 0px;
 	height: 53px;
 	width: 100%;
 	text-align: center;
