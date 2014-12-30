@@ -80,7 +80,7 @@ function listCreator(list){
 		rowNum = 3;
 	}
 
-	string += "<ul style=\"list-style-type:disc;\">";
+	string += "<ul>";
 	for (var i = 0; i <= len-1; i++) {
 
 		string += "<li";

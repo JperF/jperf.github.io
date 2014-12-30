@@ -51,7 +51,9 @@
 	position: relative;
 	display: list-item;
 	padding: 15px;
-	float: left
+	float: left;
+	width: 16.666%;
+	height: 1px;
 }
 
 #menu li {
