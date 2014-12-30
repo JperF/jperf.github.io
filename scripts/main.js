@@ -84,7 +84,7 @@ function listCreator(list){
 	for (var i = 0; i <= len-1; i++) {
 
 		string += "<li";
-		string += "style=\"width:";
+		string += " style=\"width:";
 		string += width + ";\" class=\"language\">" ;
 		
 
