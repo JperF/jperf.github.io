@@ -22,7 +22,7 @@ body {
 #main {
 	margin: 0px;
 	padding: 20px;
-	padding-left: 15px;
+	padding-left: 35px;
 }
 
 .menuItem{
@@ -50,6 +50,10 @@ body {
 .menuItem:hover {
 	background-color: black;
 	color: white;
+}
+
+#langSkill {
+	list-style-type: none;
 }
 
 .language {
