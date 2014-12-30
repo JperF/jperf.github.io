@@ -57,6 +57,7 @@
 }
 
 #menu li {
+	height: 55px;
 	margin:0px;
 	padding: 15px;
 	float: left;
