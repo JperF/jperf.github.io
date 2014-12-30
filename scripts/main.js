@@ -8,6 +8,9 @@ var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 
 var url = document.URL;
 
+var outerAmount = 990;
+var innerAmount = 767;
+
 function initLoad(){
 
 	url = document.URL;
@@ -65,15 +68,27 @@ function listCreator(list){
 	var string = "";
 	var len = list.length;
 	var dWidth = window.outerWidth;
+	var rowNum;
 
-	// 1280 - 6
-	alert(dWidth);
+	if(dWidth>= outerAmount){
+		rowNum = 6; 
+	}
+	else if(dWidth >= innerAmount){
+		rowNum = 4;
+	}
+	else {
+		rowNum = 3;
+	}
 
 	string += "<ul>";
 	for (var i = len - 1; i >= 0; i--) {
-	
+		if(i % rowNum == 0){
+			string += "<ul>";
+		}
 		string += "<li>" + list[i] + "</li>";
-	
+		if(i % rowNum == 0){
+			string += "</ul>";
+		}
 	}
 	string += "</ul>";
 
