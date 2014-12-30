@@ -123,11 +123,11 @@ function project() {
 function resume(){
 	var string = "";
 
-	string += "<article> <h4>Languages / Libraries</h4>\n";
+	string += "<article> <h1>Languages / Libraries</h1>\n";
 	string += listCreator(languages_libraries);
-	string += "</article> <article> <h4> Experience </h4>\n";
-	string += "</article> <article> <h4> Education </h4>\n";
-	string += "</article> <article> <h4> Projects </h4>\n";
+	string += "</article> <article> <h1> Experience </h1>\n";
+	string += "</article> <article> <h1> Education </h1>\n";
+	string += "</article> <article> <h1> Projects </h1>\n";
 	string += "</article>";
 	return string;
 }
