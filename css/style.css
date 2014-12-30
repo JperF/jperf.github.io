@@ -26,6 +26,7 @@
 
 .menuItem{
 	width: 30px;
+	border: 3px solid red;
 	color: black;
 	height: 53px;
 }
@@ -42,9 +43,7 @@
 	text-decoration: none;
 	color: black;
 }
-a:hover {
-	background-color: black;
-}
+
 .menuItem:hover {
 	background-color: black;
 	color: red;
