@@ -86,10 +86,10 @@ function listCreator(list){
 		string += "<li";
 		
 		if (i % rowNum != 0){
-			string += " class=\"languages\">" ;
+			string += " class=\"languagesR\">" ;
 		}
 		else {
-			string += " style=\"display:list-item;\">";
+			string += " class=\"languagesL\">";
 		}
 
 		string += list[i] + "</li>";
