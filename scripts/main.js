@@ -64,7 +64,7 @@ function initLoad(){
 function listCreator(list){
 	var string = "";
 	var len = list.length;
-	var dWidth = document.width;
+	var dWidth = window.screen.availWidth;
 
 	alert(dWidth);
 
