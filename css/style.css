@@ -21,6 +21,8 @@
 }
 
 .menuItem{
+	margin:0px;
+	padding: 0px;
 	float: left;
 	width: auto;
 	color: black;
@@ -55,6 +57,7 @@
 }
 
 #menu li {
+	margin:0px;
 	padding: 15px;
 	float: left;
 	list-style-type: none;
