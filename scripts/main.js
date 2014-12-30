@@ -28,7 +28,6 @@ function initLoad(){
 		}
 		else{
 			item ="<a href=\"#/" + menu_name + "\"";
-			alert(url)
 			if(url.search(menu_items[i]) != -1 || 
 				(url.valueOf() == "http://jperf.github.io/" && menu_items[i].valueOf() == "Resume")){
 			 	item += ">\n <li style=\"background-color:black; color:white;\"";
