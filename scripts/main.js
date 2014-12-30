@@ -4,7 +4,8 @@ var menu_items = ["Contact", "Github", "Projects",
 				 "Resume", "Jasper Forest - Web Developer"];
 
 var languages_libraries = ["Java", "JavaScript", "C", "Swift",
-				"OpenGL", "Python", "CSS", "HTML", "Git"];
+				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
+				"Scala", "Racket", "mySQL"];
 
 var url = document.URL;
 
