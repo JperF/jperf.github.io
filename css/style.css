@@ -25,8 +25,8 @@
 }
 
 .menuItem{
-	width: 30px;
-	border: 3px solid red;
+	width: 300px;
+	border: 1px solid red;
 	color: black;
 	height: 53px;
 }
