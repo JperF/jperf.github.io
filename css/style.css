@@ -60,7 +60,8 @@ body {
 .language {
 	position: relative;
 	display: inline;
-	padding: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 	float: left;
 	width: 16.666%;
 	height: auto;
