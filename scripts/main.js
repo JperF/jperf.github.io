@@ -96,13 +96,11 @@ function listCreator(list){
 		string += list[i] + "</li>";
 	}
 	string += "</ul>";
-
 	return string;
 }
 
 function contact() {
 	var string = "";
-
 	string += "<ul id=\"contactList\">\n";
 	string += "<li class=\"contact\"> <strong> Email </strong>";
 	string += "<a href=\"mailto:jasperforest@sandiego.edu?\"> Jasperforest@sandiego.edu </a> </li>\n"
@@ -125,10 +123,11 @@ function project() {
 function resume(){
 	var string = "";
 
-	string += "<h4>Languages / Libraries</h4>\n";
+	string += "<article> <h4>Languages / Libraries</h4>\n";
 	string += listCreator(languages_libraries);
-	string += "<h4> Experience </h4>\n";
-	string += "<h4> Education </h4>\n";
-	string += "<h4> Projects </h4>\n";
+	string += "</article> <article> <h4> Experience </h4>\n";
+	string += "</article> <article> <h4> Education </h4>\n";
+	string += "</article> <article> <h4> Projects </h4>\n";
+	string += "</article>";
 	return string;
 }
