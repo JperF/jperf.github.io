@@ -80,7 +80,7 @@ function listCreator(list){
 		rowNum = 3;
 	}
 
-	string += "<ul>";
+	string += "<ul style=\"display: inline;\">";
 	for (var i = len - 1; i >= 0; i--) {
 		if(i % rowNum == 0){
 			string += "<ul>";
