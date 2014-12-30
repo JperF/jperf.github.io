@@ -40,10 +40,10 @@
 	text-decoration: none;
 }
 .menuItem:hover {
-	width: auto;
-	height: auto;
+	width: 30px;
+	height: 53px;
 	background-color: black;
-	color: green;
+	color: white;
 }
 
 
