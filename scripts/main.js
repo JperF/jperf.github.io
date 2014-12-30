@@ -82,13 +82,17 @@ function listCreator(list){
 
 	string += "<ul>";
 	for (var i = 0; i <= len-1; i++) {
-		if(i % rowNum == 0){
-			string += "<li> <ul>";
+
+		string += "<li";
+		
+		if (i % 2 == 0){
+			string += " class=\"languages\">" ;
+		}	
+		else {
+			string += " >";
 		}
-		string += "<li class=\"languages\">" + list[i] + "</li>";
-		if(i % rowNum == rowNum-1){
-			string += "</ul> </li>";
-		}
+
+		string += list[i] + "</li>";
 	}
 	string += "</ul>";
 
