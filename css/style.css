@@ -23,6 +23,9 @@
 }
 
 .menuItem{
+	display: inline;
+	float: left;
+	list-style-type: none;
 	width: 30px;
 	border: 1px solid red;
 	color: black;
@@ -45,15 +48,6 @@
 .menuItem:hover {
 	background-color: black;
 	color: red;
-}
-
-
-#menu li {
-	padding: 15px;
-	font-size: 1.1em;
-	list-style-type: none;
-	display: inline;
-	float: left;
 }
 
 #menu {
