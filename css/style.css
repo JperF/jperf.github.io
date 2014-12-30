@@ -6,6 +6,10 @@
 	font-variant: normal;
 }
 
+body {
+	margin-top: -10px;
+}
+
 .contact {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -59,7 +63,6 @@
 #menu li {
 	height: 23px;
 	margin:0px;
-	margin-top: -10px;
 	padding: 15px;
 	float: left;
 	list-style-type: none;
