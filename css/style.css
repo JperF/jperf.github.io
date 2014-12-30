@@ -1,5 +1,7 @@
 /* css styles */
 * {
+	margin: 0px;
+	padding: 0px;
 	font-family:  Futura, "Trebuchet MS", Arial, sans-serif;
 	font-weight: 100;
 	font-size: 1em;
@@ -48,6 +50,8 @@
 .language {
 	position: relative;
 	display: list-item;
+	margin-left: 15px;
+	margin-right: 15px;
 	padding: 15px;
 	float: left;
 	width: 16.666%;
