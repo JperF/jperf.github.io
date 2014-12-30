@@ -89,7 +89,7 @@ function listCreator(list){
 			string += " class=\"languages\">" ;
 		}
 		else {
-			string += " style=\"display:block;\">";
+			string += " style=\"display:list-item;\">";
 		}
 
 		string += list[i] + "</li>";
