@@ -81,7 +81,7 @@ function listCreator(list){
 	}
 
 	string += "<ul>";
-	for (var i = len - 1; i >= 0; i--) {
+	for (var i = 0; i <= len-1; i++) {
 		if(i % rowNum == 0){
 			string += "<li style=\"display: inline;\"> <ul>";
 		}
