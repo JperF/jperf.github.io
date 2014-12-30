@@ -47,16 +47,11 @@
 	color: white;
 }
 
-.languageR {
-	display: inline;
-	padding: 15px;
-	float: left
-}
-
-.languageL {
+.language {
+	position: relative;
 	display: list-item;
 	padding: 15px;
-	float: left;
+	float: left
 }
 
 #menu li {
