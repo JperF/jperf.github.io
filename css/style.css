@@ -47,6 +47,11 @@
 	color: white;
 }
 
+.languages {
+	display: inline;
+	list-style-type: disc;
+}
+
 
 #menu li {
 	padding: 15px;

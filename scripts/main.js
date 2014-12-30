@@ -85,7 +85,7 @@ function listCreator(list){
 		if(i % rowNum == 0){
 			string += "<li> <ul>";
 		}
-		string += "<li style=\"display: inline;\">" + list[i] + "</li>";
+		string += "<li class=\"languages\">" + list[i] + "</li>";
 		if(i % rowNum == rowNum-1){
 			string += "</ul> </li>";
 		}
