@@ -25,7 +25,6 @@
 .menuItem{
 	float: left;
 	width: auto;
-	border: 1px solid red;
 	color: black;
 	height: 53px;
 }
@@ -45,7 +44,7 @@
 
 .menuItem:hover {
 	background-color: black;
-	color: red;
+	color: white;
 }
 
 
