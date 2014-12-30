@@ -127,6 +127,8 @@ function resume(){
 
 	string += "<h4>Languages / Libraries</h4>\n";
 	string += listCreator(languages_libraries);
-
+	string += "<h4> Experience </h4>\n";
+	string += "<h4> Education </h4>\n";
+	string += "<h4> Projects </h4>\n";
 	return string;
 }
