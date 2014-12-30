@@ -68,23 +68,24 @@ function listCreator(list){
 	var string = "";
 	var len = list.length;
 	var dWidth = window.outerWidth;
-	var rowNum;
+	var width;
 
 	if(dWidth>= outerAmount){
-		rowNum = 6; 
+		width = "16.666%"; 
 	}
 	else if(dWidth >= innerAmount){
-		rowNum = 4;
+		width = "25%";
 	}
 	else {
-		rowNum = 3;
+		width = "33.333%";
 	}
 
 	string += "<ul id=\"langSkill\">";
 	for (var i = 0; i <= len-1; i++) {
 
 		string += "<li";
-		string += " class=\"language\">" ;
+		string += "style=\"width:";
+		string += width + ";\" class=\"language\">" ;
 		
 
 		string += list[i] + "</li>";
