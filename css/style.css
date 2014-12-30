@@ -25,8 +25,8 @@
 }
 
 .menuItem{
+	width: 30px;
 	color: black;
-	width: auto;
 	height: 53px;
 }
 
@@ -40,8 +40,6 @@
 	text-decoration: none;
 }
 .menuItem:hover {
-	width: 30px;
-	height: 53px;
 	background-color: black;
 	color: white;
 }
