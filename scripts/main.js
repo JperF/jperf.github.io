@@ -85,7 +85,7 @@ function listCreator(list){
 
 		string += "<li";
 		
-		if (i % 3 != rowNum){
+		if (i % rowNum != 0){
 			string += " class=\"languages\">" ;
 		}
 		else {
