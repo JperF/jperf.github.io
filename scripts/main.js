@@ -84,7 +84,11 @@ function listCreator(list){
 	for (var i = 0; i <= len-1; i++) {
 
 		string += "<li";
-		
+
+		if(i % 3 == 0){
+			string +="style=\"display:inline\";";
+		}		
+
 		string += " class=\"languages\">" ;
 		
 
