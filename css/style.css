@@ -23,6 +23,7 @@
 }
 
 .menuItem{
+	padding: 15px;
 	float: left;
 	width: 30px;
 	border: 1px solid red;
