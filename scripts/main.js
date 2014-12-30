@@ -48,7 +48,11 @@ function initLoad(){
 	}
 
 	// Which page is being loaded
-	
+	bodyLoad();
+}
+
+
+function bodyLoad(){
 	var main_page;
 
 	if (url.search("Contact") != -1) {
