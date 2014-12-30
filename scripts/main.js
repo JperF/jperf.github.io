@@ -65,6 +65,8 @@ function listCreator(list){
 	var string = "";
 	var len = list.length;
 
+	alert(len);
+
 	string += "<ul>";
 	for (var i = len - 1; i >= 0; i--) {
 	
