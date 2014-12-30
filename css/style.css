@@ -65,7 +65,7 @@ body {
 	margin-right: 10px;
 	float: left;
 	width: 16.666%;
-	height: 1px;
+	height: auto;
 }
 
 #menu li {
