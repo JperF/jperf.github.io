@@ -83,9 +83,9 @@ function listCreator(list){
 	string += "<ul>";
 	for (var i = 0; i <= len-1; i++) {
 		if(i % rowNum == 0){
-			string += "<li style=\"display: inline;\"> <ul>";
+			string += "<li> <ul>";
 		}
-		string += "<li>" + list[i] + "</li>";
+		string += "<li style=\"display: inline;\">" + list[i] + "</li>";
 		if(i % rowNum == rowNum-1){
 			string += "</ul> </li>";
 		}
