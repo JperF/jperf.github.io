@@ -51,6 +51,8 @@
 
 
 #menu li {
+	padding: 15px;
+	float: left;
 	list-style-type: none;
 	display: inline;
 }
