@@ -85,12 +85,8 @@ function listCreator(list){
 
 		string += "<li";
 		
-		if (i % rowNum != 0){
-			string += " class=\"languagesR\">" ;
-		}
-		else {
-			string += " class=\"languagesL\">";
-		}
+		string += " class=\"languages\">" ;
+		
 
 		string += list[i] + "</li>";
 	}
