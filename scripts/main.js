@@ -84,7 +84,7 @@ function listCreator(list){
 	for (var i = 0; i <= len-1; i++) {
 
 		string += "<li";
-		string += " class=\"languages\">" ;
+		string += " class=\"language\">" ;
 		
 
 		string += list[i] + "</li>";
