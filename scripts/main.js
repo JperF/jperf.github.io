@@ -86,7 +86,7 @@ function listCreator(list){
 		string += "<li";
 
 		if(i % 3 == 0){
-			string +=" style=\"display:none\";";
+			string +=" style=\"display:none;\"";
 		}		
 
 		string += " class=\"languages\">" ;
