@@ -28,7 +28,7 @@ function initLoad(){
 		}
 		else{
 			item ="<a href=\"#/" + menu_name + "\"";
-			if(url.search(menu_items[i]) != -1 || url.search("http://jperf.github.io/") != -1){
+			if(url.search(menu_items[i]) != -1 || (url.valueOf() == "jperf.github.io/" && menu_items[i].valueOf() == "Resume")){
 			 	item += ">\n <li style=\"background-color:black; color:white;\"";
 			}
 			else{
