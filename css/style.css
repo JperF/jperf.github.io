@@ -32,16 +32,19 @@
 
 .menuItem:link{
 	text-decoration: none;
+	color: black;
 }
 .menuItem:active{
 	text-decoration: none; 
+	color: black;
 }
 .menuItem:visited {
 	text-decoration: none;
+	color: black;
 }
 .menuItem:hover {
 	background-color: black;
-	color: white;
+	color: red;
 }
 
 
