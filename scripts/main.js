@@ -103,7 +103,7 @@ function listCreator(list){
 function contact() {
 	var string = "";
 
-	string += "<ul>\n";
+	string += "<ul id=\"contactList\">\n";
 	string += "<li class=\"contact\"> <strong> Email </strong>";
 	string += "<a href=\"mailto:jasperforest@sandiego.edu?\"> Jasperforest@sandiego.edu </a> </li>\n"
 	string += "<li class=\"contact\"> <strong> Phone </strong>";
