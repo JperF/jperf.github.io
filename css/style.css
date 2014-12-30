@@ -58,7 +58,7 @@ body {
 
 .language {
 	position: relative;
-	display: list-item;
+	display: inline;
 	padding: 15px;
 	float: left;
 	width: 16.666%;
