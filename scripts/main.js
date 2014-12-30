@@ -48,7 +48,6 @@ function initLoad(){
 	var main_page;
 
 	if (url.search("Contact") != -1) {
-
 		main_page = contact();
 		document.getElementById('main').innerHTML = main_page; 
 	}
@@ -66,11 +65,13 @@ function listCreator(list){
 	var string = "";
 	var len = list.length;
 
+	string += "<ul>";
 	for (var i = len - 1; i >= 0; i--) {
 	
-		list[i]
+		string += "<li>" + list[i] + "</li>";
 	
-	};
+	}
+	string += "</ul>";
 
 	return string;
 }
