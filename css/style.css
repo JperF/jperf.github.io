@@ -59,7 +59,8 @@
 #menu li {
 	height: 23px;
 	margin:0px;
-	padding: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 	float: left;
 	list-style-type: none;
 	display: inline;
