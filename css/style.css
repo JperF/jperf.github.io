@@ -49,14 +49,14 @@
 
 .languageR {
 	display: inline;
-	list-style-type: square;
 	padding: 15px;
+	float: left
 }
 
 .languageL {
 	display: list-item;
-	list-style-type: square;
 	padding: 15px;
+	float: left;
 }
 
 #menu li {

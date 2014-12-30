@@ -80,7 +80,7 @@ function listCreator(list){
 		rowNum = 3;
 	}
 
-	string += "<ul>";
+	string += "<ul style:\"list-style-type:none;\">";
 	for (var i = 0; i <= len-1; i++) {
 
 		string += "<li";
