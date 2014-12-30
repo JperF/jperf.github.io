@@ -80,14 +80,14 @@ function listCreator(list){
 		rowNum = 3;
 	}
 
-	string += "<ul style=\"display: inline;\">";
+	string += "<ul>";
 	for (var i = len - 1; i >= 0; i--) {
 		if(i % rowNum == 0){
-			string += "<ul>";
+			string += "<li style=\"display: inline;\"> <ul>";
 		}
 		string += "<li>" + list[i] + "</li>";
 		if(i % rowNum == 0){
-			string += "</ul>";
+			string += "</ul> </li>";
 		}
 	}
 	string += "</ul>";
