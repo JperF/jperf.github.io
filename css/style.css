@@ -1,5 +1,9 @@
 /* css styles */
 * {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
 	font-family:  Futura, "Trebuchet MS", Arial, sans-serif;
 	font-weight: 100;
 	font-size: 1em;
