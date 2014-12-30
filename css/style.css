@@ -49,7 +49,8 @@
 
 .languages {
 	display: inline;
-	list-style-type: disc;
+	list-style-type: square;
+	padding: 15px;
 }
 
 
