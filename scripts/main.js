@@ -85,11 +85,8 @@ function listCreator(list){
 
 		string += "<li";
 		
-		if (i % 2 == 0){
+		if (i % 3 == 0){
 			string += " class=\"languages\">" ;
-		}	
-		else {
-			string += " style=\"display: block;\">";
 		}
 
 		string += list[i] + "</li>";
