@@ -88,6 +88,9 @@ function listCreator(list){
 		if (i % 3 == 0){
 			string += " class=\"languages\">" ;
 		}
+		else {
+			string += ">";
+		}
 
 		string += list[i] + "</li>";
 	}
