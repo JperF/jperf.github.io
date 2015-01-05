@@ -57,7 +57,8 @@ function bodyLoad(){
 
 	if (url.search("Contact") != -1) {
 		main_page = contact();
-		document.getElementById('main').innerHTML = main_page; 
+		document.getElementById('main').innerHTML = main_page;
+		alert(document.getElementById('langSkill').offsetWidth); 
 	}
 	else if(url.search("Projects") != -1){
 		main_page = project();
@@ -75,7 +76,6 @@ function listCreator(list){
 	var len = list.length;
 	var dWidth = window.outerWidth;
 	var width;
-
 	if(dWidth>= outerAmount){
 		width = "16.666%"; 
 	}
@@ -97,6 +97,7 @@ function listCreator(list){
 		string += list[i] + "</li>";
 	}
 	string += "</ul>";
+
 	return string;
 }
 
