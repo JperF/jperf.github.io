@@ -26,7 +26,7 @@ function initLoad(){
 			item = "<a href=\"https://github.com/JPERF\" class=\"menuItem\">\n" + "<li>\n"
 					+ menu_name + "\n</li>"+ "\n</a>";
 		}
-		else if(menu_name.search("Jasper Forest - Web Developer") != -1){
+		else if(menu_name.search("Jasper Forest - Software Developer") != -1){
 			item ="<a href=\"\" style=\"color:black;\">\n" +"<li>\n"
 			 +  menu_name  + "\n</li>"+ "\n</a>";
 		}
@@ -57,7 +57,7 @@ function bodyLoad(){
 
 	if (url.search("Contact") != -1) {
 		main_page = contact();
-		document.getElementById('main').innerHTML = main_page;
+		document.getElementById('main').innerHTML = main_page; 
 	}
 	else if(url.search("Projects") != -1){
 		main_page = project();
@@ -66,17 +66,15 @@ function bodyLoad(){
 	else {
 		main_page = resume();
 		document.getElementById('main').innerHTML = main_page; 
-		alert(document.getElementById('langSkill').offsetWidth); 
-		
 	}
 }
 
-// Creates an Unordered list with the given list variable.
 function listCreator(list){
 	var string = "";
 	var len = list.length;
 	var dWidth = window.outerWidth;
 	var width;
+
 	if(dWidth>= outerAmount){
 		width = "16.666%"; 
 	}
@@ -98,12 +96,10 @@ function listCreator(list){
 		string += list[i] + "</li>";
 	}
 	string += "</ul>";
-
+	document.getElementById('langSkill').style.height = document.getElementById('langSkill').offsetHeight;
 	return string;
 }
 
-
-// Create contact page
 function contact() {
 	var string = "";
 	string += "<div id=\"contactInfo\">";
@@ -118,7 +114,6 @@ function contact() {
 	return string;
 }
 
-// Creates projects page
 function project() {
 	var string = "";
 
@@ -127,7 +122,6 @@ function project() {
 	return string;
 }
 
-// Creates resume Page
 function resume(){
 	var string = "";
 
