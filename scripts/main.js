@@ -58,7 +58,6 @@ function bodyLoad(){
 	if (url.search("Contact") != -1) {
 		main_page = contact();
 		document.getElementById('main').innerHTML = main_page;
-		alert(document.getElementById('langSkill').offsetWidth); 
 	}
 	else if(url.search("Projects") != -1){
 		main_page = project();
@@ -67,6 +66,8 @@ function bodyLoad(){
 	else {
 		main_page = resume();
 		document.getElementById('main').innerHTML = main_page; 
+		alert(document.getElementById('langSkill').offsetWidth); 
+		
 	}
 }
 
