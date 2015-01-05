@@ -5,7 +5,7 @@ var menu_items = ["Contact", "Github", "Projects",
 
 var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
-				"Scala", "Racket", "mySQL"];
+				"Scala", "Racket", "mySQL", "iOS"];
 
 var url = document.URL;
 
