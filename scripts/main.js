@@ -56,9 +56,7 @@ function bodyLoad(){
 	var main_page;
 
 	if (url.search("Contact") != -1) {
-		main_page += "<div id=\"contactInfo\">";
-		main_page += contact();
-		main_page += "</div>";
+		main_page = contact();
 		document.getElementById('main').innerHTML = main_page; 
 	}
 	else if(url.search("Projects") != -1){
@@ -103,6 +101,7 @@ function listCreator(list){
 
 function contact() {
 	var string = "";
+	string += "<div id=\"contactInfo\">";
 	string += "<ul id=\"contactList\">\n";
 	string += "<li class=\"contact\"> <strong> Email </strong>";
 	string += "<a href=\"mailto:jasperforest@sandiego.edu?\"> Jasperforest@sandiego.edu </a> </li>\n"
@@ -110,7 +109,7 @@ function contact() {
 	string += "+1 (831) 239 7476 </li>\n";
 	string += "<li class=\"contact\"> <strong> Linkedin </strong>";
 	string += "<a href=\"http://www.linkedin.com/pub/jasper-forest/\"> www.linkedin.com/pub/jasper-forest/ </a> </li>\n";
-
+	string += "</div>";
 	return string;
 }
 
