@@ -96,7 +96,7 @@ function listCreator(list){
 		string += list[i] + "</li>";
 	}
 	string += "</ul>";
-	document.getElementById('langSkill').style.height = document.getElementById('langSkill').offsetHeight;
+	document.getElementById('langSkill').height = document.getElementById('langSkill').offsetHeight;
 	return string;
 }
 
