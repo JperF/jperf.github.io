@@ -66,6 +66,7 @@ function bodyLoad(){
 	else {
 		main_page = resume();
 		document.getElementById('main').innerHTML = main_page; 
+		document.getElementById('langSkill').height = document.getElementById('langSkill').offsetHeight;
 	}
 }
 
@@ -96,7 +97,6 @@ function listCreator(list){
 		string += list[i] + "</li>";
 	}
 	string += "</ul>";
-	document.getElementById('langSkill').height = document.getElementById('langSkill').offsetHeight;
 	return string;
 }
 
