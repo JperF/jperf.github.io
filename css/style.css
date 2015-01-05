@@ -21,7 +21,7 @@ body {
 }
 
 article {
-	width: 100%;
+	width: auto;
 	height: auto;
 	padding-bottom: 10px;
 	margin-bottom: 15px;
