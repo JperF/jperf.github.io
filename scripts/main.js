@@ -56,7 +56,9 @@ function bodyLoad(){
 	var main_page;
 
 	if (url.search("Contact") != -1) {
-		main_page = contact();
+		main_page += "<article id=\"contactInfo\">";
+		main_page += contact();
+		main_page += "</article>";
 		document.getElementById('main').innerHTML = main_page; 
 	}
 	else if(url.search("Projects") != -1){
