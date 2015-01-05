@@ -69,6 +69,7 @@ function bodyLoad(){
 	}
 }
 
+// Creates an Unordered list with the given list variable.
 function listCreator(list){
 	var string = "";
 	var len = list.length;
@@ -99,6 +100,8 @@ function listCreator(list){
 	return string;
 }
 
+
+// Create contact page
 function contact() {
 	var string = "";
 	string += "<div id=\"contactInfo\">";
@@ -113,6 +116,7 @@ function contact() {
 	return string;
 }
 
+// Creates projects page
 function project() {
 	var string = "";
 
@@ -121,6 +125,7 @@ function project() {
 	return string;
 }
 
+// Creates resume Page
 function resume(){
 	var string = "";
 
