@@ -1,7 +1,7 @@
 // Main javascript 
 
 var menu_items = ["Contact", "Github", "Projects",
-				 "Resume", "Jasper Forest - Web Developer"];
+				 "Resume", "Jasper Forest - Software Developer"];
 
 var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
@@ -125,7 +125,6 @@ function resume(){
 
 	string += "<article> <h1>Languages / Libraries</h1>\n";
 	string += listCreator(languages_libraries);
-	string += "<p> </p>";
 	string += "</article> <article> <h1> Experience </h1>\n";
 	string += "</article> <article> <h1> Education </h1>\n";
 	string += "</article> <article> <h1> Projects </h1>\n";
