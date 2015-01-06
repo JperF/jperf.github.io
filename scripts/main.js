@@ -66,7 +66,6 @@ function bodyLoad(){
 	else {
 		main_page = resume();
 		document.getElementById('main').innerHTML = main_page; 
-		document.getElementById('langSkill').height = document.getElementById('langSkill').offsetHeight;
 	}
 }
 
@@ -86,7 +85,7 @@ function listCreator(list){
 		width = "33.333%";
 	}
 
-	string += "<ul id=\"langSkill\">";
+	string += "<ul id=\"list\">";
 	for (var i = 0; i <= len-1; i++) {
 
 		string += "<li";
@@ -125,7 +124,7 @@ function project() {
 function resume(){
 	var string = "";
 
-	string += "<article> <h1>Languages / Libraries</h1>\n";
+	string += "<article id=\"langSkill\"> <h1>Languages / Libraries</h1>\n";
 	string += listCreator(languages_libraries);
 	string += "</article> <article> <h1> Experience </h1>\n";
 	string += "</article> <article> <h1> Education </h1>\n";
