@@ -58,7 +58,18 @@ function bodyLoad(){
 	if (url.search("Contact") != -1) {
 		main_page = contact();
 		document.getElementById('main').innerHTML = main_page; 
-		document.getElementById('langSkill').height = "150px";
+		var dWidth = window.outerWidth;
+		var h;
+		if(dWidth>= outerAmount){
+			h = "140px"; 
+		}
+		else if(dWidth >= innerAmount){
+			h = "160px";
+		}
+		else {
+			h = "180px";
+		}
+		document.getElementById('langSkill').height = h;
 	}
 	else if(url.search("Projects") != -1){
 		main_page = project();
