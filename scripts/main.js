@@ -58,6 +58,7 @@ function bodyLoad(){
 	if (url.search("Contact") != -1) {
 		main_page = contact();
 		document.getElementById('main').innerHTML = main_page; 
+		document.getElementById('langSkill').height = "150px";
 	}
 	else if(url.search("Projects") != -1){
 		main_page = project();
@@ -74,19 +75,15 @@ function listCreator(list){
 	var len = list.length;
 	var dWidth = window.outerWidth;
 	var width;
-	var h;
 
 	if(dWidth>= outerAmount){
 		width = "16.666%"; 
-		h = "100px";
 	}
 	else if(dWidth >= innerAmount){
 		width = "25%";
-		h = "130px";
 	}
 	else {
 		width = "33.333%";
-		h = "150px";
 	}
 
 	string += "<ul id=\"list\">";
@@ -94,8 +91,7 @@ function listCreator(list){
 
 		string += "<li";
 		string += " style=\"width:";
-		string += width + "; height:";
-		string += h + ";\" class=\"language\">" ;
+		string += width + ";\" class=\"language\">" ;
 		
 
 		string += list[i] + "</li>";
