@@ -164,13 +164,17 @@ function eInsert(s){
 function traitCreator(ov, list){
 	var string = "";
 
-	string += "<p style=\"float:left;\">" + ov + "</p>";
-
 	string += "<ul>";
+
 	for (var i = -1; i < list.length; i++) {
 	
-		string += "<li>";
-		string += list[i];
+		string += "<li";
+		if (i < 0) {
+			string += " style=\"float:left;\">" +ov;
+		}
+		else{
+			string += ">" + list[i];
+		}
 		string += "</li>";
 
 	}
