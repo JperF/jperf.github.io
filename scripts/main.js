@@ -1,18 +1,20 @@
 // Main javascript 
-
 var menu_items = ["Contact", "Github", "Projects",
 				 "Resume", "Jasper Forest - Software Developer"];
 
+// Languages known
 var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
 				"Scala", "Racket", "mySQL", "iOS"];
 
+// School information 
 var school_names = ["University of San Diego", "Cabrillo College"];
 var school_years = [ "2012 - 2015", "2009 - 2012"];
 var school_majors= ["Computer Science", "Mathamatics"];
 
-var work_names = ["Software Intern - LIA", "University of San Diego Computer Science Tutor",
-					"University of San Diego Teaching Assistant"];
+// Work information 
+var work_names = ["LIA", "University of San Diego", "University of San Diego"];
+var work_titles = ["Software Intern", "Computer Science Tutor", "Teaching Assistant"];
 var work_years = ["October 2014 - Present", "September 2014 - December 2014",
 					"October 2014 - December 2014"]
 var work_overview = ["Q/A testing the web, iOS, Android, and Window application", "Tutored intro level Computer Science Students",
@@ -23,6 +25,7 @@ var work_traits = [
 					["Grade/Critique coursework from the introductory computer sceience classes", "Debuggin Programs"]
 					];
 
+// Project information
 var project_names = [];
 var project_description = [];
 var project_linkURL = [];
@@ -154,8 +157,25 @@ function project() {
 	return string;
 }
 
-function experience(names, years, overview, traits){
+function eInsert(s){
+	return "<div class=\"experienceHeader\">" + s + "</div>";
+}
+
+function experience(names, title,  years, overview, traits){
 	var string = "";
+
+	for (var i = 0; i <  names.length; i++) {
+		string += "<header>";
+		string += eInsert(title[i]);
+		string += eInsert(name[i]);
+		string += eInsert(years[i]);
+		string += "</header>";
+
+		string += "<ul>";
+		string += listCreator(overview[i].concat(traits[i]));
+		string += "</ul>";
+
+	};
 
 	return string;
 }
@@ -178,7 +198,7 @@ function resume(){
 	string += "<article id=\"langSkill\"> <h1>Languages / Libraries</h1>\n";
 	string += listCreator(languages_libraries);
 	string += "</article> <article> <h1> Experience </h1>\n";
-	string += experience(work_names, work_years, work_overview, work_traits);
+	string += experience(work_names, work_titles work_years, work_overview, work_traits);
 	string += "</article> <article> <h1> Education </h1>\n";
 	string += education(school_names, school_years, school_majors);
 	string += "</article> <article> <h1> Projects </h1>\n";
