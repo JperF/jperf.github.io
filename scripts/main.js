@@ -198,7 +198,7 @@ function resume(){
 	string += "<article id=\"langSkill\"> <h1>Languages / Libraries</h1>\n";
 	string += listCreator(languages_libraries);
 	string += "</article> <article> <h1> Experience </h1>\n";
-	string += experience(work_names, work_titles work_years, work_overview, work_traits);
+	string += experience(work_names, work_titles, work_years, work_overview, work_traits);
 	string += "</article> <article> <h1> Education </h1>\n";
 	string += education(school_names, school_years, school_majors);
 	string += "</article> <article> <h1> Projects </h1>\n";
