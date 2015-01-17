@@ -13,9 +13,9 @@ var school_location = ["San Diego, CA", "Aptos, CA"];
 var school_years = [ "2012 - 2015", "2009 - 2012"];
 var school_majors= ["Computer Science", "Mathamatics"];
 var school_classes = [
-						["Software Engineering, Operating Systems, Programming Languages, Website Design, Data Structures & Algorithms",
-						"Object Orientated Programming, Theory of Computation, Computer Graphics, Assembly Language, Math Logic"]
-						["Calculus I, Calculus II, Calculus III"]
+						["Software Engineering, Operating Systems, Programming Languages", "Website Design, Data Structures & Algorithms",
+						"Object Orientated Programming, Theory of Computation", "Computer Graphics, Assembly Language, Math Logic"]
+						["Calculus I, Calculus II",  "Calculus III"]
 					];
 
 // Work information 
@@ -226,7 +226,7 @@ function resume(){
 	string += "</article> <article> <h1> Experience </h1>\n";
 	string += experience(work_names, work_titles, work_years, work_overview, work_traits);
 	string += "</article> <article> <h1> Education </h1>\n";
-	string += experience(school_names, school_location, school_years, school_majors, []);
+	string += experience(school_names, school_location, school_years, school_majors, school_classes);
 	string += "</article> <article> <h1> Projects </h1>\n";
 	string += projects(project_names, project_description, project_linkURL);
 	string += "</article>";
