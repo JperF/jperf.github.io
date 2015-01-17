@@ -94,7 +94,7 @@ function listCreator(list){
 		width = "25%";
 	}
 	else {
-		width = "33.333%";
+		width = "40.333%";
 	}
 
 	string += "<ul id=\"list\">";
