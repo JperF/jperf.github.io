@@ -14,8 +14,7 @@ var school_years = [ "2012 - 2015", "2009 - 2012"];
 var school_majors= ["Computer Science", "Mathamatics"];
 var school_classes = [
 						["Software Engineering, Operating Systems, Programming Languages, Website Design, Data Structures & Algorithms",
-						"Object Orientated Programming, Theory of Computation, Computer Graphics, Assembly Language, Math Logic",
-						]
+						"Object Orientated Programming, Theory of Computation, Computer Graphics, Assembly Language, Math Logic"]
 						["Calculus I, Calculus II, Calculus III"]
 					];
 
