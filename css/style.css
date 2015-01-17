@@ -14,6 +14,15 @@
 	height: auto;
 }
 
+
+.workOverView{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.traits {
+	list-style-type: circle 
+}
 .experienceHeader {
 	float:left;
 	position: relative;

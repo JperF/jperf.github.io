@@ -170,10 +170,10 @@ function traitCreator(ov, list){
 	
 		string += "<li";
 		if (i < 0) {
-			string += ">" +ov;
+			string += ">" + ov;
 		}
 		else{
-			string += ">" + list[i];
+			string += "class=\"traits\">" + list[i];
 		}
 		string += "</li>";
 
