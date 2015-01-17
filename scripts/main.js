@@ -170,7 +170,7 @@ function traitCreator(ov, list){
 	
 		string += "<li";
 		if (i < 0) {
-			string += "style=\"float:left;\">" +ov;
+			string += " style=\"float:left;\">" +ov;
 		}
 		else{
 			string += ">" + list[i];
