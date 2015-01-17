@@ -164,17 +164,13 @@ function eInsert(s){
 function traitCreator(ov, list){
 	var string = "";
 
-	string += "<ul>";
+	string += "<p style=\"float:left;\">" + ov + "</p>";
 
+	string += "<ul>";
 	for (var i = -1; i < list.length; i++) {
 	
-		string += "<li";
-		if (i < 0) {
-			string += " style=\"float:left;\">" +ov;
-		}
-		else{
-			string += ">" + list[i];
-		}
+		string += "<li>";
+		string += list[i];
 		string += "</li>";
 
 	}
@@ -193,9 +189,7 @@ function experience(names, title,  years, overview, traits){
 		string += eInsert(years[i]);
 		string += "</header>";
 
-		string += "<ul>";
 		string += traitCreator(overview[i], traits[i]);
-		string += "</ul>";
 
 	};
 
