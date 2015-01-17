@@ -13,9 +13,9 @@ var school_location = ["San Diego, CA", "Aptos, CA"];
 var school_years = [ "2012 - 2015", "2009 - 2012"];
 var school_majors= ["Computer Science", "Mathamatics"];
 var school_classes = [
-						["Software Engineering, Operating Systems, Programming Languages", "Website Design, Data Structures & Algorithms",
-						"Object Orientated Programming, Theory of Computation", "Computer Graphics, Assembly Language, Math Logic"]
-						["Calculus I, Calculus II",  "Calculus III"]
+						["Software Engineering, Operating Systems, Programming Languages, Website Design, Data Structures & Algorithms",
+						"Object Orientated Programming, Theory of Computation, Computer Graphics, Assembly Language, Math Logic"]
+						["Calculus I, Calculus II, Calculus III"]
 					];
 
 // Work information 
@@ -169,10 +169,11 @@ function eInsert(s){
 
 function traitCreator(ov, list){
 	var string = "";
+	var len = list.length();
 
 	string += "<ul>";
 
-	for (var i = -1; i < list.length; i++) {
+	for (var i = -1; i < len; i++) {
 	 
 		string += "<li ";
 		if (i < 0) {
