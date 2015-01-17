@@ -194,7 +194,7 @@ function experience(names, title,  years, overview, traits){
 		string += "</header>";
 
 		string += "<ul>";
-		// string += langCreator(overview[i].concat(traits[i]));
+		string += traitCreator(overview[i], traits[i]);
 		string += "</ul>";
 
 	};
