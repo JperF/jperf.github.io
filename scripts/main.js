@@ -169,7 +169,7 @@ function eInsert(s){
 
 function traitCreator(ov, list){
 	var string = "";
-	var len = list.length;
+	var len = 2;//list.length	;
 
 	string += "<ul>";
 
