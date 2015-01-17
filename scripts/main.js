@@ -172,7 +172,7 @@ function experience(names, title,  years, overview, traits){
 		string += "</header>";
 
 		string += "<ul>";
-		string += listCreator(overview[i].concat(traits[i]));
+		// string += listCreator(overview[i].concat(traits[i]));
 		string += "</ul>";
 
 	};
