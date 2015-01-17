@@ -15,8 +15,18 @@ var work_names = ["Software Intern - LIA", "University of San Diego Computer Sci
 					"University of San Diego Teaching Assistant"];
 var work_years = ["October 2014 - Present", "September 2014 - December 2014",
 					"October 2014 - December 2014"]
-var work_overview = [];
-var work_traits = [];
+var work_overview = ["Q/A testing the web, iOS, Android, and Window application", "Tutored intro level Computer Science Students",
+						"Grading/Critique Homework"];
+var work_traits = [
+					["Q/A Product Testing", "Code Refactoring", "Regression Testing"],
+					["Helped students have a better understanding of their classes.", "Helped guide students through their programs/assignments."],
+					["Grade/Critique coursework from the introductory computer sceience classes", "Debuggin Programs"]
+					];
+
+var project_names = [];
+var project_description = [];
+var project_linkURL = [];
+
 
 var url = document.URL;
 
@@ -144,7 +154,7 @@ function project() {
 	return string;
 }
 
-function experience(){
+function experience(names, years, overview, traits){
 	var string = "";
 
 	return string;
@@ -156,7 +166,7 @@ function education(names, years, majors){
 	return string;
 }
 
-function projects(){
+function projects(name, description, links){
 	var string = "";
 
 	return string;
@@ -168,11 +178,11 @@ function resume(){
 	string += "<article id=\"langSkill\"> <h1>Languages / Libraries</h1>\n";
 	string += listCreator(languages_libraries);
 	string += "</article> <article> <h1> Experience </h1>\n";
-	string += experience();
+	string += experience(work_names, work_years, work_overview, work_traits);
 	string += "</article> <article> <h1> Education </h1>\n";
 	string += education(school_names, school_years, school_majors);
 	string += "</article> <article> <h1> Projects </h1>\n";
-	string += projects();
+	string += projects(project_names, project_description, project_linkURL);
 	string += "</article>";
 	return string;
 }
