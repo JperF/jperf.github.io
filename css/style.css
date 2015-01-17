@@ -23,6 +23,7 @@ body {
 }
 
 article {
+	margin-bottom: 5px;
 	width: auto;
 	height: auto;
 }

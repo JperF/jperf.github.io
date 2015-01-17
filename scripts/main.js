@@ -7,6 +7,17 @@ var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
 				"Scala", "Racket", "mySQL", "iOS"];
 
+var school_names = ["University of San Diego", "Cabrillo College"];
+var school_years = [ "2012 - 2015", "2009 - 2012"];
+var school_majors= ["Computer Science", "Mathamatics"];
+
+var work_names = ["Software Intern - LIA", "University of San Diego Computer Science Tutor",
+					"University of San Diego Teaching Assistant"];
+var work_years = ["October 2014 - Present", "September 2014 - December 2014",
+					"October 2014 - December 2014"]
+var work_overview = [];
+var work_traits = [];
+
 var url = document.URL;
 
 var outerAmount = 990;
@@ -133,14 +144,35 @@ function project() {
 	return string;
 }
 
+function experience(){
+	var string = "";
+
+	return string;
+}
+
+function education(names, years, majors){
+	var string = "";
+
+	return string;
+}
+
+function projects(){
+	var string = "";
+
+	return string;
+}
+
 function resume(){
 	var string = "";
 
 	string += "<article id=\"langSkill\"> <h1>Languages / Libraries</h1>\n";
 	string += listCreator(languages_libraries);
 	string += "</article> <article> <h1> Experience </h1>\n";
+	string += experience();
 	string += "</article> <article> <h1> Education </h1>\n";
+	string += education(school_names, school_years, school_majors);
 	string += "</article> <article> <h1> Projects </h1>\n";
+	string += projects();
 	string += "</article>";
 	return string;
 }
