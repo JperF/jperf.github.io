@@ -167,10 +167,10 @@ function traitCreator(ov, list){
 	string += "<ul>";
 
 	for (var i = -1; i < list.length; i++) {
-	
-		string += "<li";
+	 
+		string += "<li ";
 		if (i < 0) {
-			string += ">" + ov;
+			string += "class=\"workOverView\">" + ov;
 		}
 		else{
 			string += "class=\"traits\">" + list[i];
