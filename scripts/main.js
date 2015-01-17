@@ -11,7 +11,7 @@ var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 var school_names = ["University of San Diego", "Cabrillo College"];
 var school_location = ["San Diego, CA", "Aptos, CA"];
 var school_years = [ "2012 - 2015", "2009 - 2012"];
-var school_majors= ["Computer Science", "Mathamatics"];
+var school_majors= ["B.A. - Computer Science", "A.A. - Mathamatics"];
 var school_classes = [
 						["Software Engineering, Operating Systems, Programming Languages, Website Design, Data Structures & Algorithms",
 						"Object Orientated Programming, Theory of Computation, Computer Graphics, Assembly Language, Math Logic"],
@@ -32,8 +32,8 @@ var work_traits = [
 					];
 
 // Project information
-var project_names = [];
-var project_description = [];
+var project_names = ["TumYum"];
+var project_description = ["iOS Recipe finding application written in swift."];
 var project_linkURL = [];
 
 
