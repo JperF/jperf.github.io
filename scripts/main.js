@@ -167,7 +167,7 @@ function experience(names, title,  years, overview, traits){
 	for (var i = 0; i <  names.length; i++) {
 		string += "<header>";
 		string += eInsert(title[i]);
-		string += eInsert(name[i]);
+		string += eInsert(names[i]);
 		string += eInsert(years[i]);
 		string += "</header>";
 
