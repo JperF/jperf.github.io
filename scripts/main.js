@@ -168,12 +168,12 @@ function traitCreator(ov, list){
 
 	for (var i = -1; i < list.length; i++) {
 	
-		string += "<li>";
+		string += "<li";
 		if (i < 0) {
-			string += ov;
+			string += "style=\"float:left;\">" +ov;
 		}
 		else{
-			string += list[i];
+			string += ">" + list[i];
 		}
 		string += "</li>";
 
