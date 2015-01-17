@@ -33,6 +33,7 @@ body {
 
 article {
 	margin-bottom: 5px;
+	padding-right: 5px;
 	width: auto;
 	height: auto;
 }

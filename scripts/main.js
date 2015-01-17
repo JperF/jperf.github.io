@@ -105,7 +105,7 @@ function bodyLoad(){
 	}
 }
 
-function listCreator(list){
+function langCreator(list){
 	var string = "";
 	var len = list.length;
 	var dWidth = window.outerWidth;
@@ -161,6 +161,28 @@ function eInsert(s){
 	return "<div class=\"experienceHeader\">" + s + "</div>";
 }
 
+function traitCreator(ov, list){
+	var string = "";
+
+	string += "<ul>";
+
+	for (var i = -1; i < list.length; i++) {
+	
+		string += "<li>";
+		if (i < 0) {
+			string += ov;
+		}
+		else{
+			string += list[i];
+		}
+		string += "</li>";
+
+	}
+
+	string += "</ul>";
+	return string;
+}
+
 function experience(names, title,  years, overview, traits){
 	var string = "";
 
@@ -172,7 +194,7 @@ function experience(names, title,  years, overview, traits){
 		string += "</header>";
 
 		string += "<ul>";
-		// string += listCreator(overview[i].concat(traits[i]));
+		// string += langCreator(overview[i].concat(traits[i]));
 		string += "</ul>";
 
 	};
@@ -196,7 +218,7 @@ function resume(){
 	var string = "";
 
 	string += "<article id=\"langSkill\"> <h1>Languages / Libraries</h1>\n";
-	string += listCreator(languages_libraries);
+	string += langCreator(languages_libraries);
 	string += "</article> <article> <h1> Experience </h1>\n";
 	string += experience(work_names, work_titles, work_years, work_overview, work_traits);
 	string += "</article> <article> <h1> Education </h1>\n";
