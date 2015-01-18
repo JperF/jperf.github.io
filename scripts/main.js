@@ -163,6 +163,9 @@ function project() {
 
 	string += "<h1> Projects </h1>";
 
+	
+	
+
 	return string;
 }
 
@@ -218,6 +221,7 @@ function projects(name, description, links, dates){
 		string += "<hreader>";
 		string += eInsert(name[i]);
 		string += eInsert(links[i]);
+		string += eInsert(dates[i]);
 		string += "</header>";
 		string += traitCreator(empty, description[i] );	
 	};
