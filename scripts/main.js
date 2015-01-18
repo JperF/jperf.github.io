@@ -34,7 +34,7 @@ var work_traits = [
 // Project information
 var project_names = ["TumYum"];
 var project_description = ["iOS Recipe finding application written in swift."];
-var project_linkURL = [];
+var project_linkURL = ["https://github.com/JperF/TumYum"];
 
 
 var url = document.URL;
@@ -207,14 +207,17 @@ function experience(names, title,  years, overview, traits){
 	return string;
 }
 
-function education(names, years, majors){
-	var string = "";
-
-	return string;
-}
-
 function projects(name, description, links){
 	var string = "";
+	var empty = [];
+
+	for (var i = 0; i < name.length; i++) {
+		string += "<hreader>";
+		string += eInsert(name[i]);
+		string += eInsert(links[i]);
+		string += "</header>";
+		string += traitCreator(empty, description[i]);
+	};
 
 	return string;
 }
