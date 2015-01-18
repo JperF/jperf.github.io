@@ -216,9 +216,8 @@ function projects(name, description, links, dates){
 		string += "<hreader>";
 		string += eInsert(name[i]);
 		string += eInsert(links[i]);
-
 		string += "</header>";
-		string += traitCreator(description[i], empty);	
+		string += traitCreator(empty, description[i] );	
 	};
 
 	return string;
@@ -234,7 +233,7 @@ function resume(){
 	string += "</article> <article> <h1> Education </h1>\n";
 	string += experience(school_names, school_location, school_years, school_majors, school_classes);
 	string += "</article> <article> <h1> Projects </h1>\n";
-	string += experience(project_names, project_linkURL, project_date, project_description,empty);
+	string += projects(project_names, project_description, project_linkURL, project_date);
 	string += "</article>";
 	return string;
 }
