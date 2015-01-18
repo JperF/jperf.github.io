@@ -119,6 +119,7 @@ function langCreator(list){
 	var len = list.length;
 	var dWidth = window.outerWidth;
 	var width;
+	var height;
 
 	if(dWidth>= outerAmount){
 		width = "16.666%"; 
@@ -163,8 +164,8 @@ function project() {
 
 	string += "<h1> Projects </h1>";
 
-	
-	
+
+
 
 	return string;
 }
@@ -220,7 +221,7 @@ function projects(name, description, links, dates){
 	for (var i = 0; i < name.length; i++) {
 		string += "<hreader>";
 		string += eInsert(name[i]);
-		string += eInsert(links[i]);
+		string += eInsert("<a href=\"" + links[i] + "\">" + links[i] + "</a>");
 		string += eInsert(dates[i]);
 		string += "</header>";
 		string += traitCreator(empty, description[i] );	
