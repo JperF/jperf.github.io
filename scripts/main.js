@@ -35,7 +35,9 @@ var work_traits = [
 var project_names = ["TumYum"];
 var project_linkURL = ["https://github.com/JperF/TumYum"];
 var project_date = ["2014"]
-var project_description = ["iOS Recipe finding application written in swift."];
+var project_description = [
+							["iOS Recipe finding application written in swift."]
+							];
 
 
 var url = document.URL;
