@@ -226,7 +226,7 @@ function projects(name, description, links, dates){
 
 function resume(){
 	var string = "";
-
+	var empty = [];
 	string += "<article id=\"langSkill\"> <h1>Languages / Libraries</h1>\n";
 	string += langCreator(languages_libraries);
 	string += "</article> <article> <h1> Experience </h1>\n";
@@ -234,7 +234,7 @@ function resume(){
 	string += "</article> <article> <h1> Education </h1>\n";
 	string += experience(school_names, school_location, school_years, school_majors, school_classes);
 	string += "</article> <article> <h1> Projects </h1>\n";
-	string += experience(project_names, project_linkURL, project_date, project_description, []);
+	string += experience(project_names, project_linkURL, project_date, project_description,empty);
 	string += "</article>";
 	return string;
 }
