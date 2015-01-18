@@ -91,26 +91,29 @@ function bodyLoad(){
 	if (url.search("Contact") != -1) {
 		main_page = contact();
 		document.getElementById('main').innerHTML = main_page; 
-		var dWidth = window.outerWidth;
-		var h;
-		if(dWidth>= outerAmount){
-			h = "140px"; 
-		}
-		else if(dWidth >= innerAmount){
-			h = "160px";
-		}
-		else {
-			h = "180px";
-		}
-		document.getElementById('langSkill').height = h;
 	}
 	else if(url.search("Projects") != -1){
 		main_page = project();
 		document.getElementById('main').innerHTML = main_page; 
 	}
 	else {
-		main_page = resume();
+		var dWidth = window.outerWidth;
+		var small = false;
+		var h;
+		if(dWidth>= outerAmount){
+			h = "100px"; 
+		}
+		else if(dWidth >= innerAmount){
+			h = "140px";
+		}
+		else {
+			small = true;
+			h = "180px";
+		}
+		
+		main_page = resume(small);
 		document.getElementById('main').innerHTML = main_page; 	
+		document.getElementById('langSkill').style["height"] = h; 
 	}
 }
 
@@ -119,16 +122,16 @@ function langCreator(list){
 	var len = list.length;
 	var dWidth = window.outerWidth;
 	var width;
-	var height;
 
 	if(dWidth>= outerAmount){
 		width = "16.666%"; 
+
 	}
 	else if(dWidth >= innerAmount){
 		width = "25%";
 	}
 	else {
-		width = "40.333%";
+		width = "33.333%";
 	}
 
 	string += "<ul id=\"list\">";
@@ -174,6 +177,18 @@ function eInsert(s){
 	return "<div class=\"experienceHeader\">" + s + "</div>";
 }
 
+function samllEInsert(t, n, y){
+	var rtn =  "<div class=\"smallExperienceHeader\"> ";
+
+	rtn += "<ul style=\"list-style-type: none; 	min-width: 200px;\">";
+	rtn += "<li>" + t + "</li>";
+	rtn += "<li>" + n + "</li>";
+	rtn += "<li>" + y + "</li>";
+	rtn += "</ul> </div>";
+
+	return rtn;
+}
+
 function traitCreator(ov, list){
 	var string = "";
 	var len = list.length	;
@@ -197,16 +212,22 @@ function traitCreator(ov, list){
 	return string;
 }
 
-function experience(names, title,  years, overview, traits){
+function experience(smallScreen, names, title,  years, overview, traits){
 	var string = "";
 
 	for (var i = 0; i <  names.length; i++) {
-		string += "<header>";
-		string += eInsert(title[i]);
-		string += eInsert(names[i]);
-		string += eInsert(years[i]);
-		string += "</header>";
 
+		string += "<header>";
+
+		if(smallScreen){
+			string += samllEInsert(title[i], names[i], years[i]);
+		}
+		else{
+			string += eInsert(title[i]);
+			string += eInsert(names[i]);
+			string += eInsert(years[i]);
+		}	
+		string += "</header>";
 		string += traitCreator(overview[i], traits[i]);
 
 	};
@@ -230,15 +251,15 @@ function projects(name, description, links, dates){
 	return string;
 }
 
-function resume(){
+function resume(smallScreen){
 	var string = "";
 	var empty = [];
 	string += "<article id=\"langSkill\"> <h1>Languages / Libraries</h1>\n";
 	string += langCreator(languages_libraries);
 	string += "</article> <article> <h1> Experience </h1>\n";
-	string += experience(work_names, work_titles, work_years, work_overview, work_traits);
+	string += experience(smallScreen, work_names, work_titles, work_years, work_overview, work_traits);
 	string += "</article> <article> <h1> Education </h1>\n";
-	string += experience(school_names, school_location, school_years, school_majors, school_classes);
+	string += experience(smallScreen, school_names, school_location, school_years, school_majors, school_classes);
 	string += "</article> <article> <h1> Projects </h1>\n";
 	string += projects(project_names, project_description, project_linkURL, project_date);
 	string += "</article>";

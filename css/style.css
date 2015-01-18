@@ -12,11 +12,12 @@
 	padding: 5px;
 	width: auto;
 	height: auto;
+	font-size: 1.1em;
 }
 
 
 .workOverView{
-	margin-left: -40px;
+	margin-left: -30px;
 	padding-bottom: 5px; 
 	list-style-type: none;
 }
@@ -30,10 +31,23 @@
 	height: auto;
 	margin-bottom: 5px;
 	margin-top: 5px;
+	color:#424242;
+	font-size: 1.1em;
+}
+
+.smallExperienceHeader{
+
+	height: auto;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	color:#424242;
+	margin-left: -40px;
+	font-size: 1.1em;
 }
 
 h1 {
 	font-size: 1.3em;
+	color: black;
 }
 
 body {
@@ -41,6 +55,7 @@ body {
 }
 
 article {
+	color: #848484;
 	margin-bottom: 5px;
 	padding-right: 5px;
 	width: auto;
@@ -94,6 +109,9 @@ article {
 	list-style-type: none;
 	margin-left: 0px;
 	padding-left: 0px;
+}
+
+#langSkill {
 	height: 100px;
 }
 
@@ -136,5 +154,5 @@ article {
 	height: 53px;
 	padding-left: 20px;
 	border-bottom: 1px solid black;
-	min-width: 700px;
+	min-width: 550px;
 }
