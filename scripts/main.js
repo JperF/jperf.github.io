@@ -33,8 +33,9 @@ var work_traits = [
 
 // Project information
 var project_names = ["TumYum"];
-var project_description = ["iOS Recipe finding application written in swift."];
 var project_linkURL = ["https://github.com/JperF/TumYum"];
+var project_date = ["2014"]
+var project_description = ["iOS Recipe finding application written in swift."];
 
 
 var url = document.URL;
@@ -207,7 +208,7 @@ function experience(names, title,  years, overview, traits){
 	return string;
 }
 
-function projects(name, description, links){
+function projects(name, description, links, dates){
 	var string = "";
 	var empty = [];
 
@@ -215,6 +216,7 @@ function projects(name, description, links){
 		string += "<hreader>";
 		string += eInsert(name[i]);
 		string += eInsert(links[i]);
+
 		string += "</header>";
 		string += traitCreator(description[i], empty);	
 	};
@@ -232,7 +234,7 @@ function resume(){
 	string += "</article> <article> <h1> Education </h1>\n";
 	string += experience(school_names, school_location, school_years, school_majors, school_classes);
 	string += "</article> <article> <h1> Projects </h1>\n";
-	string += projects(project_names, project_description, project_linkURL);
+	string += experience(project_names, project_linkURL, project_date, project_description, []);
 	string += "</article>";
 	return string;
 }
