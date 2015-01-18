@@ -216,7 +216,7 @@ function projects(name, description, links){
 		string += eInsert(name[i]);
 		string += eInsert(links[i]);
 		string += "</header>";
-		string += traitCreator(empty, description[i]);
+		string += traitCreator(description[i], empty);	
 	};
 
 	return string;
