@@ -235,15 +235,20 @@ function experience(smallScreen, names, title,  years, overview, traits){
 	return string;
 }
 
-function projects(name, description, links, dates){
+function projects(smallScreen, name, description, links, dates){
 	var string = "";
 	var empty = [];
 
 	for (var i = 0; i < name.length; i++) {
 		string += "<hreader>";
-		string += eInsert(name[i]);
-		string += eInsert("<a href=\"" + links[i] + "\">" + links[i] + "</a>");
-		string += eInsert(dates[i]);
+		if (smallScreen){
+			string += samllEInsert(name[i], "<a href=\"" + links[i] + "\">" + links[i] + "</a>", dates[i]);
+		}
+		else {
+			string += eInsert(name[i]);
+			string += eInsert("<a href=\"" + links[i] + "\">" + links[i] + "</a>");
+			string += eInsert(dates[i]);
+		}	
 		string += "</header>";
 		string += traitCreator(empty, description[i] );	
 	};
@@ -261,7 +266,7 @@ function resume(smallScreen){
 	string += "</article> <article> <h1> Education </h1>\n";
 	string += experience(smallScreen, school_names, school_location, school_years, school_majors, school_classes);
 	string += "</article> <article> <h1> Projects </h1>\n";
-	string += projects(project_names, project_description, project_linkURL, project_date);
+	string += projects(smallScreen, project_names, project_description, project_linkURL, project_date);
 	string += "</article>";
 	return string;
 }
