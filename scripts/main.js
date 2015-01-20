@@ -2,6 +2,8 @@
 var menu_items = ["Contact", "Github", "Projects",
 				 "Resume", "Jasper Forest - Software Developer"];
 
+var main_name = "Jasper Forest - Software Developer";
+
 // Languages known
 var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
@@ -42,8 +44,12 @@ var project_description = [
 
 var url = document.URL;
 
+var buttonDown = false;
+
 var outerAmount = 990;
 var innerAmount = 767;
+
+var locked = false;
 
 function initLoad(){
 
@@ -51,33 +57,56 @@ function initLoad(){
 	// Load top menu
 	// Clear current fill
 	document.getElementById('menu').innerHTML = "";
+	var dWidth = window.outerWidth;
+	var small = false;
+	var h;
+	if (dWidth < innerAmount) {
+		small = true;
+		if (buttonDown) 
+		{
+			expand('extraMenu');
+		}
+	}
+	else{
+		retract('extraMenu');
+	}
+
 	// Populates 
-	for (var i = menu_items.length - 1; i >= 0; i--) {
-		var menu_name = menu_items[i];
+	if(small){
 		var item;
-		if (menu_name.search("Github") != -1) {
-			item = "<a href=\"https://github.com/JPERF\" class=\"menuItem\">\n" + "<li>\n"
-					+ menu_name + "\n</li>"+ "\n</a>";
-		}
-		else if(menu_name.search("Jasper Forest - Software Developer") != -1){
-			item ="<a href=\"\" style=\"color:black;\">\n" +"<li>\n"
-			 +  menu_name  + "\n</li>"+ "\n</a>";
-		}
-		else{
-			item ="<a href=\"#/" + menu_name + "\"";
-			if(url.search(menu_items[i]) != -1 || 
-				(url.valueOf() == "http://jperf.github.io/" && menu_items[i].valueOf() == "Resume")){
-			 	item += ">\n <li style=\"background-color:black; color:white;\"";
+		item ="<a href=\"\" style=\"color:black;\">\n" +"<li>\n"
+				 +  main_name  + "\n</li>"+ "\n</a>";
+
+
+		item += makeButtonMenu();
+
+		document.getElementById('menu').innerHTML += item; 
+	}
+	else {
+		for (var i = menu_items.length - 1; i >= 0; i--) {
+			var menu_name = menu_items[i];
+			var item;
+			if (menu_name.search("Github") != -1) {
+				item = "<a href=\"https://github.com/JPERF\" class=\"menuItem\">\n" + "<li>\n"
+						+ menu_name + "\n</li>"+ "\n</a>";
+			}
+			else if(menu_name.search("Jasper Forest - Software Developer") != -1){
+				item ="<a href=\"\" style=\"color:black;\">\n" +"<li>\n"
+				 +  menu_name  + "\n</li>"+ "\n</a>";
 			}
 			else{
-				item += " class=\"menuItem\">\n <li";
+				item ="<a href=\"#/" + menu_name + "\"";
+				if(url.search(menu_items[i]) != -1 || 
+					(url.valueOf() == "http://jperf.github.io/" && menu_items[i].valueOf() == "Resume")){
+				 	item += ">\n <li style=\"background-color:black; color:white;\"";
+				}
+				else{
+					item += " class=\"menuItem\">\n <li";
+				}
+				item +=  ">\n" + menu_name  + "\n</li>"+ "\n</a>";
 			}
-
-
-			item +=  ">\n" 
-					+ menu_name  + "\n</li>"+ "\n</a>";
+			document.getElementById('menu').innerHTML += item; 
 		}
-		document.getElementById('menu').innerHTML += item; 
 	}
 
 	// Which page is being loaded
@@ -85,7 +114,7 @@ function initLoad(){
 }
 
 
-function bodyLoad(){
+function bodyLoad(h){
 	var main_page;
 
 	if (url.search("Contact") != -1) {
@@ -104,16 +133,43 @@ function bodyLoad(){
 			h = "100px"; 
 		}
 		else if(dWidth >= innerAmount){
-			h = "140px";
+			h = "120px";
 		}
 		else {
 			small = true;
-			h = "180px";
+			h = "140px";
 		}
 		
 		main_page = resume(small);
 		document.getElementById('main').innerHTML = main_page; 	
 		document.getElementById('langSkill').style["height"] = h; 
+	}
+}
+
+
+function makeButtonMenu(){
+	var button = "";
+
+	button += "<a href=\"#\" onclick=\"return false\" onmousedown=\"buttonMenu()\" id=\"toggle\">" 
+			+ "<img src=\"images/button.png\" id=\"button\"> ";
+	button += "</a> ";
+
+	return button;
+}
+
+function buttonMenu(){
+
+	if(buttonDown && !locked){
+		locked = true
+		retract('extraMenu');
+		buttonDown = false;
+		locked = false;
+	}
+	else if(!buttonDown && !locked){
+		locked = true;
+		expand('extraMenu');
+		buttonDown = true;
+		locked = false
 	}
 }
 
@@ -269,4 +325,29 @@ function resume(smallScreen){
 	string += projects(smallScreen, project_names, project_description, project_linkURL, project_date);
 	string += "</article>";
 	return string;
+}
+
+function expand(element){
+	var target = document.getElementById(element);
+	var h = target.offsetHeight;
+	var sh = target.scrollHeight;
+	var loopTimer = setTimeout('expand(\''+element+'\')',8);
+	if(h < sh){
+		h += 6;
+	} else {
+		clearTimeout(loopTimer);
+	}
+	target.style["height"] = h+"px";
+}
+function retract(element){
+	var target = document.getElementById(element);
+	var h = target.offsetHeight;
+	var loopTimer = setTimeout('retract(\''+element+'\')',8);
+	if(h > 0){
+		h -= 6;
+	} else {
+		target.style["height"] = "0px";
+		clearTimeout(loopTimer);
+	}
+	target.style["height"] = h+"px";
 }

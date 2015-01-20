@@ -4,11 +4,19 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<script type="text/javascript" src="scripts/main.js"></script>
 	</head>
-	<body onhashchange="initLoad();" onload="initLoad();" onresize="bodyLoad();">
+	<body onhashchange="initLoad();" onload="initLoad();" onresize="initLoad();">
 		<!-- Top Menu -->
 		<nav id="topSection">
 			<ul id="menu"></ul>
 		</nav>
+		<div id="extraMenu" style="height: 0px;"> 
+			<ul style="border-bottom: 1px solid black;"> 
+ 			 <a href="#/Resume" class="menuItemVert"> <li class="mli">Resume</li></a>
+ 			 <a href="#/Projects" class="menuItemVert"> <li class="mli">Projects</li></a>
+ 			 <a href="https://github.com/JPERF" class="menuItemVert"><li class="mli">Github</li></a>
+ 			 <a href="#/Contact" class="menuItemVert"><li class="mli">Contact</li></a>
+ 			</ul>
+		</div>
 		<!-- Top Menu end -->
 		<!-- Main Body -->
 		<main>

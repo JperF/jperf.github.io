@@ -1,18 +1,41 @@
 /* css styles */
 * {
 	font-family:  Arial, Helvetica, sans-serif;
-	font-weight: 100;
-	font-variant: normal;
 	font-size: .97em;
-	height: auto;
 }
 
+.mli {
+	margin-bottom: 15px;
+	height: auto;
+	width: 100%;
+	list-style-type: none;
+}
+
+#button {
+	float:right;
+	margin-right: 20px;
+	margin-top: -1px;
+	width: 53px;
+	height: 53px;
+	border: 1px solid black;
+}
+
+#extraMenu{
+	width: 100%;
+	height: 0px;
+	overflow: hidden;
+}
 #contactInfo {
 	margin: 5px;
 	padding: 5px;
 	width: auto;
 	height: auto;
 	font-size: 1.1em;
+}
+
+#toggle {
+	height: 20px;
+	width: 20px;
 }
 
 
@@ -36,7 +59,6 @@
 }
 
 .smallExperienceHeader{
-
 	height: auto;
 	margin-bottom: 5px;
 	margin-top: 5px;
@@ -73,10 +95,23 @@ article {
 }
 
 #main {
+
 	margin: 0px;
 	padding-left: 20px;
 	padding-left: 35px;
 }
+
+
+.menuItemVert {
+	text-decoration: none;
+	color: black;
+}
+
+.menuItemVert:hover {
+	background-color: black;
+	color: white;
+}
+
 
 .menuItem{
 	margin:0px;
@@ -107,19 +142,25 @@ article {
 
 #list {
 	list-style-type: none;
-	margin-left: 0px;
-	padding-left: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 #langSkill {
 	height: 100px;
 }
 
+#collapseButton {
+	float:right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	height: 40px;
+}
+
 .language {
 	position: relative;
 	display: inline;
-	padding-left: 15px;
-	padding-right: 15px;
 	padding-bottom: 5px;
 	float: left;
 	width: 16.666%;
@@ -141,7 +182,6 @@ article {
 	height: 53px;
 	width: auto;
 	text-align: center;
-
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -154,5 +194,4 @@ article {
 	height: 53px;
 	padding-left: 20px;
 	border-bottom: 1px solid black;
-	min-width: 550px;
 }
