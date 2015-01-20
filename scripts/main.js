@@ -117,29 +117,29 @@ function initLoad(){
 function bodyLoad(h){
 	var main_page;
 
+	var dWidth = window.outerWidth;
+	var small = false;
+	var h;
+	if(dWidth>= outerAmount){
+		h = "100px"; 
+	}
+	else if(dWidth >= innerAmount){
+		h = "120px";
+	}
+	else {
+		small = true;
+		h = "140px";
+	}
+
 	if (url.search("Contact") != -1) {
 		main_page = contact();
 		document.getElementById('main').innerHTML = main_page; 
 	}
 	else if(url.search("Projects") != -1){
-		main_page = project();
+		main_page = project(small);
 		document.getElementById('main').innerHTML = main_page; 
 	}
 	else {
-		var dWidth = window.outerWidth;
-		var small = false;
-		var h;
-		if(dWidth>= outerAmount){
-			h = "100px"; 
-		}
-		else if(dWidth >= innerAmount){
-			h = "120px";
-		}
-		else {
-			small = true;
-			h = "140px";
-		}
-		
 		main_page = resume(small);
 		document.getElementById('main').innerHTML = main_page; 	
 		document.getElementById('langSkill').style["height"] = h; 
@@ -205,8 +205,7 @@ function langCreator(list){
 }
 
 function contact() {
-	var string = "";
-	string += "<div id=\"contactInfo\">";
+	var string = "<div id=\"contactInfo\">";
 	string += "<ul id=\"contactList\">\n";
 	string += "<li class=\"contact\"> <strong> Email </strong>";
 	string += "<a href=\"mailto:jasperforest@sandiego.edu?\"> Jasperforest@sandiego.edu </a> </li>\n"
@@ -218,14 +217,25 @@ function contact() {
 	return string;
 }
 
-function project() {
-	var string = "";
 
-	string += "<h1> Projects </h1>";
+function projectMaker(names, dates, description, links){
+	var s = "<div> <ul>";
 
+	for (var i = 0; i < names.length; i++) {
+		s += "<li style=\"width:50%;\">";
+		s += eInsert(names[i]);
+		s += eInsert(dates[i]);
+		s += eInsert(links[i]);
+		s += "<p>" + description[i] + "</p>";
+		s += "</li>";
+	};
 
+	return s + "</ul> </div>"
+}
 
-
+function project(smallScreen) {
+	var string = "<h1> Projects </h1>";
+	string += projects(smallScreen, project_names, project_description, project_linkURL, project_date);
 	return string;
 }
 
@@ -296,7 +306,7 @@ function projects(smallScreen, name, description, links, dates){
 	var empty = [];
 
 	for (var i = 0; i < name.length; i++) {
-		string += "<hreader>";
+		string += "<header>";
 		if (smallScreen){
 			string += samllEInsert(name[i], "<a href=\"" + links[i] + "\">" + links[i] + "</a>", dates[i]);
 		}
