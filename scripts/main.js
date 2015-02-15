@@ -34,11 +34,12 @@ var work_traits = [
 					];
 
 // Project information
-var project_names = ["TumYum"];
-var project_linkURL = ["https://github.com/JperF/TumYum"];
-var project_date = ["2014"]
+var project_names = ["TumYum", "Virtual World"];
+var project_linkURL = ["https://github.com/JperF/TumYum", "https://github.com/JperF/GraphicsFinalProject"];
+var project_date = ["2014", "2014"]
 var project_description = [
-							["iOS Recipe finding application written in swift."]
+							["iOS Recipe finding application written in swift.",
+							"Virtual world made using openGL in C."]
 							];
 
 
