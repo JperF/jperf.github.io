@@ -39,7 +39,7 @@ var project_linkURL = ["https://github.com/JperF/TumYum", "https://github.com/Jp
 var project_date = ["2014", "2014"]
 var project_description = [
 							["iOS Recipe finding application written in swift.", "Use of Model View Controller and OPbject Oriented Programming."],
-							["Virtual world made using openGL in C.", "Complex vector spaces and calculus."]
+							["Virtual world made using openGL in C.", "Complex vector spaces and calculus.	"]
 							];
 
 
