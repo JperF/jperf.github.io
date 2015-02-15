@@ -1,4 +1,4 @@
-// Main javascript 
+// Main javascript
 var menu_items = ["Contact", "Github", "Projects",
 				 "Resume", "Jasper Forest - Software Developer"];
 
@@ -7,9 +7,9 @@ var main_name = "Jasper Forest - Software Developer";
 // Languages known
 var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
-				"Scala", "Racket", "mySQL", "iOS"];
+				"Scala", "Racket", "mySQL", "iOS", "Objective-C", "PHP", "MySQL"];
 
-// School information 
+// School information
 var school_names = ["University of San Diego", "Cabrillo College"];
 var school_location = ["San Diego, CA", "Aptos, CA"];
 var school_years = [ "2012 - 2015", "2009 - 2012"];
@@ -20,7 +20,7 @@ var school_classes = [
 						["Calculus I, Calculus II, Calculus III"]
 					];
 
-// Work information 
+// Work information
 var work_names = ["LIA", "University of San Diego", "University of San Diego"];
 var work_titles = ["Software Intern", "Computer Science Tutor", "Teaching Assistant"];
 var work_years = ["October 2014 - Present", "September 2014 - December 2014",
@@ -62,7 +62,7 @@ function initLoad(){
 	var h;
 	if (dWidth < innerAmount) {
 		small = true;
-		if (buttonDown) 
+		if (buttonDown)
 		{
 			expand('extraMenu');
 		}
@@ -71,7 +71,7 @@ function initLoad(){
 		retract('extraMenu');
 	}
 
-	// Populates 
+	// Populates
 	if(small){
 		var item;
 		item ="<a href=\"\" style=\"color:black;\">\n" +"<li>\n"
@@ -80,7 +80,7 @@ function initLoad(){
 
 		item += makeButtonMenu();
 
-		document.getElementById('menu').innerHTML += item; 
+		document.getElementById('menu').innerHTML += item;
 	}
 	else {
 		for (var i = menu_items.length - 1; i >= 0; i--) {
@@ -96,7 +96,7 @@ function initLoad(){
 			}
 			else{
 				item ="<a href=\"#/" + menu_name + "\"";
-				if(url.search(menu_items[i]) != -1 || 
+				if(url.search(menu_items[i]) != -1 ||
 					(url.valueOf() == "http://jperf.github.io/" && menu_items[i].valueOf() == "Resume")){
 				 	item += ">\n <li style=\"background-color:black; color:white;\"";
 				}
@@ -105,7 +105,7 @@ function initLoad(){
 				}
 				item +=  ">\n" + menu_name  + "\n</li>"+ "\n</a>";
 			}
-			document.getElementById('menu').innerHTML += item; 
+			document.getElementById('menu').innerHTML += item;
 		}
 	}
 
@@ -121,7 +121,7 @@ function bodyLoad(h){
 	var small = false;
 	var h;
 	if(dWidth>= outerAmount){
-		h = "100px"; 
+		h = "100px";
 	}
 	else if(dWidth >= innerAmount){
 		h = "120px";
@@ -133,16 +133,16 @@ function bodyLoad(h){
 
 	if (url.search("Contact") != -1) {
 		main_page = contact();
-		document.getElementById('main').innerHTML = main_page; 
+		document.getElementById('main').innerHTML = main_page;
 	}
 	else if(url.search("Projects") != -1){
 		main_page = project(small);
-		document.getElementById('main').innerHTML = main_page; 
+		document.getElementById('main').innerHTML = main_page;
 	}
 	else {
 		main_page = resume(small);
-		document.getElementById('main').innerHTML = main_page; 	
-		document.getElementById('langSkill').style["height"] = h; 
+		document.getElementById('main').innerHTML = main_page;
+		document.getElementById('langSkill').style["height"] = h;
 	}
 }
 
@@ -150,7 +150,7 @@ function bodyLoad(h){
 function makeButtonMenu(){
 	var button = "";
 
-	button += "<a href=\"#\" onclick=\"return false\" onmousedown=\"buttonMenu()\" id=\"toggle\">" 
+	button += "<a href=\"#\" onclick=\"return false\" onmousedown=\"buttonMenu()\" id=\"toggle\">"
 			+ "<img src=\"images/button.png\" id=\"button\"> ";
 	button += "</a> ";
 
@@ -180,7 +180,7 @@ function langCreator(list){
 	var width;
 
 	if(dWidth>= outerAmount){
-		width = "16.666%"; 
+		width = "16.666%";
 
 	}
 	else if(dWidth >= innerAmount){
@@ -196,7 +196,7 @@ function langCreator(list){
 		string += "<li";
 		string += " style=\"width:";
 		string += width + ";\" class=\"language\">" ;
-		
+
 
 		string += list[i] + "</li>";
 	}
@@ -262,7 +262,7 @@ function traitCreator(ov, list){
 	string += "<ul>";
 
 	for (var i = -1; i < len; i++) {
-	 
+
 		string += "<li ";
 		if (i < 0) {
 			string += "class=\"workOverView\">" + ov;
@@ -292,7 +292,7 @@ function experience(smallScreen, names, title,  years, overview, traits){
 			string += eInsert(title[i]);
 			string += eInsert(names[i]);
 			string += eInsert(years[i]);
-		}	
+		}
 		string += "</header>";
 		string += traitCreator(overview[i], traits[i]);
 
@@ -314,9 +314,9 @@ function projects(smallScreen, name, description, links, dates){
 			string += eInsert(name[i]);
 			string += eInsert("<a href=\"" + links[i] + "\">" + links[i] + "</a>");
 			string += eInsert(dates[i]);
-		}	
+		}
 		string += "</header>";
-		string += traitCreator(empty, description[i] );	
+		string += traitCreator(empty, description[i] );
 	};
 
 	return string;
