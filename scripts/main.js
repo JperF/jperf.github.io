@@ -35,7 +35,7 @@ var work_traits = [
 
 // Project information
 var project_names = ["TumYum", "Virtual World", "E-commerce website"];
-var project_linkURL = ["https://github.com/JperF/TumYum", "https://github.com/JperF/GraphicsFinalProject", '\0 Work in Progress..'];
+var project_linkURL = ["https://github.com/JperF/TumYum", "https://github.com/JperF/GraphicsFinalProject", "Work in Progress.."];
 var project_date = ["2014", "2014","2015"]
 var project_description = [
 							["iOS Recipe finding application written in swift.", "Use of Model View Controller and OPbject Oriented Programming."],
