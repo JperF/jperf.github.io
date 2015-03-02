@@ -7,7 +7,8 @@ var main_name = "Jasper Forest - Software Developer";
 // Languages known
 var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
-				"Scala", "Racket", "mySQL", "iOS", "Objective-C", "PHP", "MySQL"];
+				"Scala", "Racket", "mySQL", "iOS", "Objective-C", "PHP", "MySQL",
+				"node.js", "express", "parse DB", "ejs templates", "bootstrap.js", "jquery.js"];
 
 // School information
 var school_names = ["University of San Diego", "Cabrillo College"];
