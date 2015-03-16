@@ -1,0 +1,33 @@
+#main-cont {
+   box-shadow: 1px 2px 5px black;
+   padding-top:10px;
+   padding-bottom:10px;
+   background-color: #F4F4F4;
+   margin-bottom: 20px;
+   overflow:hidden;
+}
+
+.dark{
+   color: #0F0F0F;
+   font-weight:bold;
+}
+
+.shift {
+   margin-left: -15px;
+}
+
+.border-blue {
+   border-top: 1px solid #428bca;
+   margin-bottom:5px;
+   margin-top:-6px;
+   width: 350px;
+}
+
+.spacing{
+   min-width:420px;
+}
+
+#profile-Pic{
+   min-width:120px;
+   min-height:120px;
+}

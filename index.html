@@ -1,27 +1,60 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script type="text/javascript" src="scripts/main.js"></script>
-	</head>
-	<body onhashchange="initLoad();" onload="initLoad();" onresize="initLoad();">
-		<!-- Top Menu -->
-		<nav id="topSection">
-			<ul id="menu"></ul>
-		</nav>
-		<div id="extraMenu" style="height: 0px;"> 
-			<ul style="border-bottom: 1px solid black;"> 
- 			 <a href="#/Resume" class="menuItemVert"> <li class="mli">Resume</li></a>
- 			 <a href="#/Projects" class="menuItemVert"> <li class="mli">Projects</li></a>
- 			 <a href="https://github.com/JPERF" class="menuItemVert"><li class="mli">Github</li></a>
- 			 <a href="#/Contact" class="menuItemVert"><li class="mli">Contact</li></a>
- 			</ul>
-		</div>
-		<!-- Top Menu end -->
-		<!-- Main Body -->
-		<main>
-			<section id="main"></section>
-		</main>
-		<!-- Main Body end -->
-	</body>
-</html>
+<html lang="en">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Personal Website of Jasper Forest">
+      <meta name="author" content="Jasper Forest">
+      <!-- <link rel="icon" href="http://getbootstrap.com/favicon.ico"> -->
+
+      <title>Jasper Forest</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <!-- Custom CSS -->
+      <link href="css/custom.css" rel="stylesheet">
+   </head>
+  <body onload="firstLoad()" onhashchange="pageLoad()">
+
+    <div class="container">
+      <div class="container spacing">
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand">Jasper Forest - SW Developer</a>
+               </div>
+
+               <div class="collapse navbar-collapse" id="nav-menu">
+                  <ul class="nav nav-pills nav-justified" id="menu-choice">
+                     <!-- Content loads with js -->
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </div>
+
+      <div class="container spacing" id="main-cont">
+         <!-- Content loads with js -->
+         
+      </div>
+
+      <footer class="footer">
+        <p> Copyright © 2015 Jasper Forest | <a href="https://www.linkedin.com/pub/jasper-forest/61/26/316/en"> LinkedIn </a></p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+   <script type="text/javascript" src="js/bootstrap.js"></script>
+   <script type="text/javascript" src="js/navigation.js"></script>
+
+
+</body></html>
