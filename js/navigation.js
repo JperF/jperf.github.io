@@ -1,7 +1,7 @@
 /* Page navigation js */
 
 // Main javascript
-var personal_info = "Some personal information here";
+var personal_info = "Making the world of Internet a better place, one code block at a time.";
 var personal_loc = "San Diego";
 var personal_email = "jasperforest@sandiego.edu";
 var personal_phone = "831.239.7476";
