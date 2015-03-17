@@ -176,7 +176,7 @@ function genExp(){
 				}
 				exp += "</ul></li></ul></div></div></div>";
 	}
-	exp += "</div>";
+	exp += "</div></div>";
 	return exp;
 }
 
@@ -192,7 +192,7 @@ function genLang(){
 }
 
 function genEdu(){
-	var edu = "<div class=\"container\"><h3> Experience </h3>" + genLine();
+	var edu = "<div class=\"container\"><h3> Education </h3>" + genLine();
 	for(var i = 0;i < school_names.length; i++){
 		edu += "<div style=\"margin-bottom:10px;\"> <div class=\"col-md-4 dark\">"+
 				school_names[i] + "</div><div class=\"col-md-4 dark\">" + school_location[i] + "</div>"+
