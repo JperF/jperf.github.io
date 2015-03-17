@@ -5,6 +5,7 @@ var personal_info = "Making the world of Internet a better place, one code block
 var personal_loc = "San Diego";
 var personal_email = "jasperforest@sandiego.edu";
 var personal_phone = "831.239.7476";
+var personal_resume ="forest_resume.pdf";
 
 var contact_street = "4819 Gardena Ave";
 var contact_city = "San Diego";
@@ -156,8 +157,10 @@ function generateResume(){
 	var rtn = genExp();
 	rtn += genLang();
 	rtn += genEdu();
+	rtn += genPDF();
    return rtn;
 }
+
 
 function genLine(){
 	return "<div class=\"shift container\"><div class=\"container col-xs-6 col-md-6 col-lg-6" +
@@ -205,6 +208,16 @@ function genEdu(){
 	}
 	edu += "</div>";
 	return edu;
+}
+
+function genPDF(){
+	var pdf = "<div class=\"container\">";
+
+	pdf += "<a href=\"" + personal_resume + "\" download><div class=\"btn-group\" role=\"group\" aria-label=\"...\">"+
+	"<button type=\"button\" class=\"btn btn-primary\">Download resume as PDF</button></a>";
+
+	pdf += "</div>";
+	return pdf;
 }
 
 function generatePorfolio(){
