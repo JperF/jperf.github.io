@@ -7,6 +7,8 @@ var personal_email = "jasperforest@sandiego.edu";
 var personal_phone = "831.239.7476";
 var personal_resume ="forest_resume.pdf";
 
+var scroll_speed = 490;
+
 var contact_street = "4819 Gardena Ave";
 var contact_city = "San Diego";
 var contact_state = "CA";
@@ -14,7 +16,7 @@ var contact_zip = "92210";
 // Languages known
 var languages_libraries = ["Java", "JavaScript", "C", "Swift",
 				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
-				"Scala", "Racket", "mySQL", "iOS", "Objective-C", "PHP", "MySQL",
+				"Scala", "Racket", "mySQL", "iOS", "Objective-C", "PHP",
 				"node.js", "express", "parse DB", "ejs", "bootstrap.js", "jquery.js"];
 
 // School information
@@ -43,13 +45,15 @@ var work_traits = [
 
 // Project information
 var project_names = ["TumYum", "Virtual World", "E-commerce website"];
-var project_linkURL = ["https://github.com/JperF/TumYum", "https://github.com/JperF/GraphicsFinalProject", "Work in Progress.."];
-var project_date = ["2014", "2014","2015"]
+var project_linkURL = ["https://github.com/JperF/TumYum", "https://github.com/JperF/GraphicsFinalProject", "https://github.com/Jperf/Jot"];
+var project_overview = ["DESCRIPTIONS", "DESCRIPTIONS","DESCRIPTIONS"]
 var project_description = [
 							["iOS Recipe finding application written in swift.", "Use of Model View Controller and OPbject Oriented Programming."],
-							["Virtual world made using openGL in C.", "Complex vector spaces and calculus.	"],
+							["Virtual world made using openGL in C.", "Complex vector spaces and calculus."],
 							["Using node.js along with express.js & bootstrap.js to web framework.", "Working with stripe to incorporate online subscriptions and transactions."]
 							];
+var project_images = ["icons/tumyum.png", "http://blog.opovo.com.br/ancoradouro/wp-content/uploads/sites/2/2012/05/mundo-virtual.jpg",
+								"http://static.wixstatic.com/media/070e71_d7619a64c6a942729402504a1ad9e4d2.jpg_srz_p_185_169_75_22_0.50_1.20_0.00_jpg_srz"];
 
 function pageLoad(){
    url = document.URL;
@@ -64,7 +68,7 @@ function firstLoad(){
    //Generates navigations bar
    document.getElementById('menu-choice').innerHTML = generateMenu(url);
    //Generates content
-   generateContent(url, true);
+   generateContent(url, false);
 }
 
 function generateMenu(url){
@@ -106,7 +110,7 @@ function generateContent(url, first){
 
    if(url.indexOf("Resume")  > -1){
       if(!first){
-         $("#main-cont").slideUp(520,function(){
+         $("#main-cont").slideUp(scroll_speed,function(){
             gen(generateResume);
          });
       }
@@ -116,7 +120,7 @@ function generateContent(url, first){
    }
    else if(url.indexOf("Portfolio") > -1){
       if(!first){
-         $("#main-cont").slideUp(520,function(){
+         $("#main-cont").slideUp(scroll_speed,function(){
             gen(generatePorfolio);
          });
       }
@@ -126,7 +130,7 @@ function generateContent(url, first){
    }
    else if(url.indexOf("Contact") > -1){
       if(!first){
-         $("#main-cont").slideUp(520,function(){
+         $("#main-cont").slideUp(scroll_speed,function(){
             gen(generateContact);
          });
       }
@@ -136,7 +140,7 @@ function generateContent(url, first){
    }
    else{
       if(!first){
-         $("#main-cont").slideUp(520,function(){
+         $("#main-cont").slideUp(scroll_speed,function(){
             gen(generateProfile);
          });
       }
@@ -145,12 +149,13 @@ function generateContent(url, first){
       }
    }
    if(!first){
-      $("#main-cont").slideDown(520);
+      $("#main-cont").slideDown(scroll_speed);
    }
 }
 
 function gen(f){
-   document.getElementById('main-cont').innerHTML = f();
+	document.getElementById('main-cont').innerHTML = f();
+
 }
 
 function generateResume(){
@@ -220,8 +225,25 @@ function genPDF(){
 	return pdf;
 }
 
+
 function generatePorfolio(){
-   return "<p> work in progress - protfolio</p>";
+
+	var port= "";
+	for(var i = 0; i < project_names.length; i++){
+
+		port += "<a target=\"_blank\" href=\""+ project_linkURL[i] + "\" class=\"hover-tilt\" id=\"proj"+ i +"\"><div class=\"container"+
+					" blue-back col-lg-12\"><div class=\"container col-xs-12 col-md-3\" >"+
+					"<h2>"+ project_names[i] +"</h2></div><div class=\"container col-xs-12 col-md-3\">"+
+					"<img src=\"" + project_images[i] + "\" class=\"project-img img-thumbnail\" style=\"margin-top:5px;"+
+					" margin-bottom:5px;\"></div><div class=\"container col-xs-12 col-md-10\"><ul class"+
+					"=\"list-unstyled\"><li>" + project_overview[i] +"</li><ul>";
+		for(var j = 0; j < project_description[i].length; j++){
+			port += "<li>" + project_description[i][j] + "</li>";
+		}
+
+		port += "</ul></ul></div></div></a>";
+	}
+	return port;
 }
 
 function generateContact(){

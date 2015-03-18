@@ -7,6 +7,25 @@
    overflow:hidden;
 }
 
+.project-img{
+   border:1px solid black;
+   max-width: 110px;
+   max-height: 100px;
+}
+
+.hover-tilt{
+   color: black;
+}
+
+.hover-tilt > div:hover{
+   background-color: #CAE5FF;
+   color:black;
+}
+
+.blue-back{
+   box-shadow: 0px 1px 5px #428bca;
+}
+
 .dark{
    color: #0F0F0F;
    font-weight:bold;
