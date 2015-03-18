@@ -68,7 +68,7 @@ function firstLoad(){
    //Generates navigations bar
    document.getElementById('menu-choice').innerHTML = generateMenu(url);
    //Generates content
-   generateContent(url, false);
+   generateContent(url, true);
 }
 
 function generateMenu(url){
