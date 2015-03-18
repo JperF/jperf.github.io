@@ -253,7 +253,7 @@ function generateContact(){
 				"Phone: " + personal_phone + "<br>Website: jperf.github.io<br><a href=\""+
 				"https://www.linkedin.com/pub/jasper-forest/61/26/316/en\"> LinkedIn Profile</a><br>"+
 				"</address></div><div class=\"col-xs-5 col-md-6\"><p class=\"lead text-center\">"+
-				"Send me a Message!</p><form action=\"MAILTO:"+personal_email +"\" method=\"post\">"+
+				"Send me a Message!</p><form id=\"mail-form\" action=\"MAILTO:"+personal_email +"\" method=\"sendIt()\" enctype=\"text/plain\">"+
 				"<div class=\"form-group\"><label for=\"nameIn\">Your Name</label><input class=" +
 				"\"form-control focusedInput\" id=\"nameIn\" required focus></div><div class=\"form-group\">"+
 				"<label for=\"emailIn\">Your Email</label><input type=\"email\" class=\"form-control\" id=\"emailIn\""+
@@ -261,6 +261,7 @@ function generateContact(){
 				"<textarea style=\"max-width:555px; min-height:125px;\" class=\"form-control\" id=\"messageIn\" required>"+
 				"</textarea></div><button type=\"submit\" class=\"btn btn-primary\">Send</button></form></div></div>";
 }
+
 
 function generateProfile(){
    return "<div class=\"row\"><div class=\"container\"><div class=\"col-xs-4 col-md-3\"><img src=\""+
