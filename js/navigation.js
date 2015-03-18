@@ -148,9 +148,9 @@ function generateContent(url, first){
          gen(generateProfile);
       }
    }
-   if(!first){
+   // if(!first){
       $("#main-cont").slideDown(scroll_speed);
-   }
+   // }
 }
 
 function gen(f){
