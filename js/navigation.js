@@ -52,8 +52,8 @@ var project_description = [
 							["Virtual world made using openGL in C.", "Complex vector spaces and calculus."],
 							["Using node.js along with express.js & bootstrap.js to web framework.", "Working with stripe to incorporate online subscriptions and transactions."]
 							];
-var project_images = ["icons/tumyum.png", "http://blog.opovo.com.br/ancoradouro/wp-content/uploads/sites/2/2012/05/mundo-virtual.jpg",
-								"http://static.wixstatic.com/media/070e71_d7619a64c6a942729402504a1ad9e4d2.jpg_srz_p_185_169_75_22_0.50_1.20_0.00_jpg_srz"];
+var project_images = ["icons/tumyum.png", "icons/mundo-virtual.jpg",
+								"icons/jot.00_jpg_sz.00_jpg_srz"];
 
 function pageLoad(){
    url = document.URL;
@@ -125,7 +125,7 @@ function generateContent(url, first){
          });
       }
       else{
-         gen(generatePortfolio);
+         gen(generatePorfolio);
       }
    }
    else if(url.indexOf("Contact") > -1){
