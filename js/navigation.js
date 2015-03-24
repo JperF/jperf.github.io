@@ -46,7 +46,9 @@ var work_traits = [
 // Project information
 var project_names = ["TumYum", "Virtual World", "E-commerce website"];
 var project_linkURL = ["https://github.com/JperF/TumYum", "https://github.com/JperF/GraphicsFinalProject", "https://github.com/Jperf/Jot"];
-var project_overview = ["DESCRIPTIONS", "DESCRIPTIONS","DESCRIPTIONS"]
+var project_overview = ["An iOS application that assists users in finding a recipe they can make with ingredients in their fridge.",
+ 								"A virtual world created using the openGL library, allows user to jump and move via the keyboard.",
+								"A juice delivery bussiness that allows their users to set up subscription based payments using the strip API."]
 var project_description = [
 							["iOS Recipe finding application written in swift.", "Use of Model View Controller and OPbject Oriented Programming."],
 							["Virtual world made using openGL in C.", "Complex vector spaces and calculus."],
@@ -232,16 +234,17 @@ function generatePorfolio(){
 	for(var i = 0; i < project_names.length; i++){
 
 		port += "<a target=\"_blank\" href=\""+ project_linkURL[i] + "\" class=\"hover-tilt\" id=\"proj"+ i +"\"><div class=\"container"+
-					" blue-back col-lg-12\"><div class=\"container col-xs-12 col-md-3\" >"+
-					"<h2>"+ project_names[i] +"</h2></div><div class=\"container col-xs-12 col-md-3\">"+
+					" blue-back col-xs-12 col-md-12 col-lg-12\"><div class=\"container col-xs-6 col-md-3\" >"+
+					"<h3>"+ project_names[i] +"</h3></div><div class=\"container col-xs-3 col-md-3\">"+
 					"<img src=\"" + project_images[i] + "\" class=\"project-img img-thumbnail\" style=\"margin-top:5px;"+
-					" margin-bottom:5px;\"></div><div class=\"container col-xs-12 col-md-10\"><ul class"+
+					" margin-bottom:5px;\"></div><div class=\"container col-xs-12 col-md-5\"><ul class"+
 					"=\"list-unstyled\"><li>" + project_overview[i] +"</li><ul>";
 		for(var j = 0; j < project_description[i].length; j++){
 			port += "<li>" + project_description[i][j] + "</li>";
 		}
 
-		port += "</ul></ul></div></div></a>";
+		port += "</ul></ul></div></div></a><div style=\"margin-top:10px;\" "+
+				"class=\"col-xs-12 col-md-12 col-lg-12 container\"></div>";
 	}
 	return port;
 }
@@ -253,7 +256,7 @@ function generateContact(){
 				"Phone: " + personal_phone + "<br>Website: jperf.github.io<br><a href=\""+
 				"https://www.linkedin.com/pub/jasper-forest/61/26/316/en\"> LinkedIn Profile</a><br>"+
 				"</address></div><div class=\"col-xs-5 col-md-6\"><p class=\"lead text-center\">"+
-				"Send me a Message!</p><form id=\"mail-form\" action=\"MAILTO:"+personal_email +"\" method=\"sendIt()\" enctype=\"text/plain\">"+
+				"Send me a Message!</p><form id=\"mail-form\" action=\"#Contact\">"+
 				"<div class=\"form-group\"><label for=\"nameIn\">Your Name</label><input class=" +
 				"\"form-control focusedInput\" id=\"nameIn\" required focus></div><div class=\"form-group\">"+
 				"<label for=\"emailIn\">Your Email</label><input type=\"email\" class=\"form-control\" id=\"emailIn\""+
@@ -262,6 +265,21 @@ function generateContact(){
 				"</textarea></div><button type=\"submit\" class=\"btn btn-primary\">Send</button></form></div></div>";
 }
 
+function sendIt(){
+	var name = document.getElementById('nameIn').value;
+	var email = document.getElementById('emailIn').value;
+	var message = document.getElementById('messageIn').value;
+	if(name != "" && email != "" && message != "" && email.indexOf("@") > -1 && email.indexOf("@") != email.length -1){
+		var mailto_Link = "mailto:jasper@liaapp.com?subject=Message From:" +name +
+		 					" | " + email + "&body=" + message;
+							alert('sent');
+
+		win = window.open(mailto_link, 'emailWindow');
+		if( win && win.open){
+			win.close();
+		}
+	}
+}
 
 function generateProfile(){
    return "<div class=\"row\"><div class=\"container\"><div class=\"col-xs-4 col-md-3\"><img src=\""+
