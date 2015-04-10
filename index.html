@@ -50,6 +50,26 @@
       </footer>
 
     </div> <!-- /container -->
+    <script>
+
+$("button").click(function(){
+
+    var name = document.getElementById('nameIn').value;
+    var email = document.getElementById('emailIn').value;
+    var message = document.getElementById('messageIn').value;
+    if(name != "" && email != "" && message != "" && email.indexOf("@") > -1 && email.indexOf("@") != email.length -1){
+      var mailto_Link = "mailto:jasper@liaapp.com?subject=Message From:" +name +
+                       " | " + email + "&body=" + message;
+                      alert('sent');
+
+      win = window.open(mailto_link, 'emailWindow');
+      if( win && win.open){
+          win.close();
+      }
+    }
+});
+
+    </script>
 
     <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
    <script type="text/javascript" src="js/bootstrap.js"></script>
