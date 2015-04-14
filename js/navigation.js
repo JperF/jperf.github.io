@@ -1,7 +1,7 @@
 /* Page navigation js */
 
 // Main javascript
-var personal_info = "Making the world of Internet a better place, one code block at a time.";
+var personal_info = "Making the world a better place, one code block at a time.";
 var personal_loc = "San Diego";
 var personal_email = "jasperforest@sandiego.edu";
 var personal_phone = "831.239.7476";
@@ -44,18 +44,13 @@ var work_traits = [
 					];
 
 // Project information
-var project_names = ["TumYum", "Virtual World", "E-commerce website"];
-var project_linkURL = ["https://github.com/JperF/TumYum", "https://github.com/JperF/GraphicsFinalProject", "https://github.com/Jperf/Jot"];
-var project_overview = ["An iOS application that assists users in finding a recipe they can make with ingredients in their fridge.",
- 								"A virtual world created using the openGL library, allows user to jump and move via the keyboard.",
-								"A juice delivery bussiness that allows their users to set up subscription based payments using the strip API."]
+var project_names = ["E-commerce WebApp"];
+var project_linkURL = ["https://github.com/Jperf/Jot"];
+var project_overview = ["A juice delivery bussiness that allows their users to set up subscription based payments using the strip API."]
 var project_description = [
-							["iOS Recipe finding application written in swift.", "Use of Model View Controller and OPbject Oriented Programming."],
-							["Virtual world made using openGL in C.", "Complex vector spaces and calculus."],
 							["Using node.js along with express.js & bootstrap.js to web framework.", "Working with stripe to incorporate online subscriptions and transactions."]
 							];
-var project_images = ["icons/tumyum.png", "icons/mundo-virtual.jpg",
-								"icons/jot.00_jpg_sz.00_jpg_srz"];
+var project_images = ["icons/jot.00_jpg_sz.00_jpg_srz"];
 
 function pageLoad(){
    url = document.URL;
@@ -150,14 +145,11 @@ function generateContent(url, first){
          gen(generateProfile);
       }
    }
-   // if(!first){
-      $("#main-cont").slideDown(scroll_speed);
-   // }
+   $("#main-cont").slideDown(scroll_speed);
 }
 
 function gen(f){
 	document.getElementById('main-cont').innerHTML = f();
-
 }
 
 function generateResume(){
@@ -262,7 +254,7 @@ function generateContact(){
 				"<label for=\"emailIn\">Your Email</label><input type=\"email\" class=\"form-control\" id=\"emailIn\""+
 				" required></div><div class=\"form-group\"><label for=\"messageIn\">Your Message</label>"+
 				"<textarea style=\"max-width:555px; min-height:125px;\" class=\"form-control\" id=\"messageIn\" required>"+
-				"</textarea></div><button type=\"submit\" class=\"btn btn-primary\">Send</button></form></div></div>";
+				"</textarea></div><button onclick=\"sendIt()\" type=\"submit\" class=\"btn btn-primary\">Send</button></form></div></div>";
 }
 
 function sendIt(){
@@ -270,15 +262,13 @@ function sendIt(){
 	var email = document.getElementById('emailIn').value;
 	var message = document.getElementById('messageIn').value;
 	if(name != "" && email != "" && message != "" && email.indexOf("@") > -1 && email.indexOf("@") != email.length -1){
-		var mailto_Link = "mailto:jasper@liaapp.com?subject=Message From:" +name +
-		 					" | " + email + "&body=" + message;
-							alert('sent');
-
-		win = window.open(mailto_link, 'emailWindow');
+		var mailto_Link = "mailto:jasper@liaapp.com?subject=Message From:" +name + " | " + email + "&body=" + message;
+		win = window.open(mailto_Link, 'emailWindow');
 		if( win && win.open){
 			win.close();
 		}
 	}
+	alert('done');
 }
 
 function generateProfile(){
