@@ -45,7 +45,7 @@ var work_traits = [
 
 // Project information
 var project_names = ["E-commerce WebApp"];
-var project_linkURL = ["https://bottleexchange.herokuapp.com"];
+var project_linkURL = ["http://bottleexchange.herokuapp.com"];
 var project_overview = ["A juice delivery bussiness that allows their users to set up subscription based payments using the strip API."]
 var project_description = [
 							["Using node.js along with express.js & bootstrap.js to web framework.", "Working with stripe to incorporate online subscriptions and transactions."]
