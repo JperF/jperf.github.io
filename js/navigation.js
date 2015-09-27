@@ -9,15 +9,14 @@ var personal_resume ="forest_resume.pdf";
 
 var scroll_speed = 490;
 
-var contact_street = "4819 Gardena Ave";
+var contact_street = "Crown Point";
 var contact_city = "San Diego";
 var contact_state = "CA";
-var contact_zip = "92210";
+var contact_zip = "92109";
 // Languages known
-var languages_libraries = ["Java", "JavaScript", "C", "Swift",
-				"OpenGL", "Python", "CSS", "HTML", "Git", "AppleScript",
-				"Scala", "Racket", "mySQL", "iOS", "Objective-C", "PHP",
-				"node.js", "express", "parse DB", "ejs", "bootstrap.js", "jquery.js"];
+var languages_libraries = ["Java", "JavaScript", "C",
+			    "CSS", "HTML", "Git", "mongoDB", "angular.js",
+			   "node.js", "express", "parse DB", "ejs templates", "bootstrap.js", "jquery.js"];
 
 // School information
 var school_names = ["University of San Diego", "Cabrillo College"];
@@ -25,31 +24,36 @@ var school_location = ["San Diego, CA", "Aptos, CA"];
 var school_years = [ "2012 - 2015", "2009 - 2012"];
 var school_major= ["B.A. - Computer Science", "A.A. - Mathamatics"];
 var school_classes = [
-						["Software Engineering, Operating Systems, Programming Languages, Website Design, Data Structures & Algorithms",
-						"Object Orientated Programming, Theory of Computation, Computer Graphics, Assembly Language, Math Logic"],
-						["Calculus I, Calculus II, Calculus III"]
+		      ["Software Engineering, Operating Systems, Programming Languages, Website Design, Data Structures & Algorithms",
+		       "Object Orientated Programming, Theory of Computation, Computer Graphics, Assembly Language, Math Logic"],
+		      ["Calculus I, Calculus II, Calculus III"]
 					];
 
 // Work information
-var work_names = ["LIA", "University of San Diego", "University of San Diego"];
-var work_titles = ["Software Intern", "Computer Science Tutor", "Teaching Assistant"];
-var work_years = ["October 2014 - Present", "September 2014 - December 2014",
-					"October 2014 - December 2014"]
-var work_overview = ["Quality Assurance testing the web, iOS, Android, and Window application", "Tutored intro level Computer Science Students",
-						"Grading/Critique Homework"];
+var work_names = ["PINT Inc.", "LIA", "University of San Diego", "University of San Diego"];
+var work_titles = ["Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
+var work_years = ["June 2015 - Present", "October 2014 - May 2015", "September 2014 - December 2014",
+		  "October 2014 - December 2014"];
+var work_overview = ["JavaScript Full Stack Engineer",
+			"Quality Assurance testing the web, iOS, Android, and Window application",
+			"Tutored intro level Computer Science Students",
+			"Grading/Critique Homework"];
 var work_traits = [
-					["Q/A Product Testing", "Code Refactoring", "Regression Testing"],
-					["Helped students have a better understanding of their classes.", "Helped guide students through their programs/assignments."],
-					["Grade/Critique coursework from the introductory computer sceience classes", "Debuggin Programs"]
-					];
+		   ["Building web and software applications using W3C-compliant HTML, CSS and JavaScript",
+				"Designing and implementing node.js and NoSQL-type server and database environments, as well as traditional LAMP stack applications",
+				"Provide feedback, solutions and recommendations on project direction as a member of a collaborative team"],
+		   ["Q/A Product Testing", "Code Refactoring", "Regression Testing"],
+		   ["Helped students have a better understanding of their classes.", "Helped guide students through their programs/assignments."],
+		   ["Grade/Critique coursework from the introductory computer sceience classes", "Debuggin Programs"]
+		   ];
 
 // Project information
 var project_names = ["E-commerce WebApp"];
 var project_linkURL = ["https://bottleexchange.herokuapp.com"];
-var project_overview = ["A juice delivery bussiness that allows their users to set up subscription based payments using the strip API."]
+var project_overview = ["A juice delivery bussiness that allows their users to set up subscription based payments using the strip API."];
 var project_description = [
-							["Using node.js along with express.js & bootstrap.js to web framework.", "Working with stripe to incorporate online subscriptions and transactions."]
-							];
+			   ["Using node.js along with express.js & bootstrap.js to web framework.", "Working with stripe to incorporate online subscriptions and transactions."]
+			   ];
 var project_images = ["icons/jot.00_jpg_sz.00_jpg_srz"];
 
 function pageLoad(){
@@ -73,32 +77,32 @@ function generateMenu(url){
       return "<li style=\"padding-top:5px;\"> <a href=\"#Profile\"> <span class=\"glyphicon glyphicon-user\""+
       " aria-hidden=\"true\"></span> Profile</a></li><li class=\"active\"  style=\"padding-top:5px;\"><a href=\"#Resume\">" +
       " <span class=\"glyphicon glyphicon-equalizer\" aria-hidden=\"true\"></span> Resume </a></li>" +
-      " <li style=\"padding-top:5px;\"><a href=\"#Portfolio\"> <span class=\"glyphicon glyphicon-folder-open\" aria-hidden=\"true\">" +
-      " </span> Portfolio</a></li><li style=\"padding-top:5px;\"><a href=\"#Contact\"> <span class=\"glyphicon glyphicon-send\" " +
+      "<!-- <li style=\"padding-top:5px;\"><a href=\"#Portfolio\"> <span class=\"glyphicon glyphicon-folder-open\" aria-hidden=\"true\">" +
+      " </span> Portfolio</a></li> --> <li style=\"padding-top:5px;\"><a href=\"#Contact\"> <span class=\"glyphicon glyphicon-send\" " +
       " aria-hidden=\"true\"></span> Contact</a></li>";
    }
    else if(url.indexOf("Portfolio") > -1){
       return "<li style=\"padding-top:5px;\"> <a href=\"#Profile\"> <span class=\"glyphicon glyphicon-user\""+
        " aria-hidden=\"true\"></span> Profile</a></li><li style=\"padding-top:5px;\"><a href=\"#Resume\">" +
        " <span class=\"glyphicon glyphicon-equalizer\" aria-hidden=\"true\"></span> Resume </a></li>" +
-       " <li class=\"active\" style=\"padding-top:5px;\"><a href=\"#Portfolio\"> <span class=\"glyphicon glyphicon-folder-open\" aria-hidden=\"true\">" +
-       " </span> Portfolio</a></li><li style=\"padding-top:5px;\"><a href=\"#Contact\"> <span class=\"glyphicon glyphicon-send\" " +
+       "<!-- <li class=\"active\" style=\"padding-top:5px;\"><a href=\"#Portfolio\"> <span class=\"glyphicon glyphicon-folder-open\" aria-hidden=\"true\">" +
+       " </span> Portfolio</a></li> --> <li style=\"padding-top:5px;\"><a href=\"#Contact\"> <span class=\"glyphicon glyphicon-send\" " +
        " aria-hidden=\"true\"></span> Contact</a></li>";
    }
    else if(url.indexOf("Contact") > -1){
       return "<li style=\"padding-top:5px;\"> <a href=\"#Profile\"> <span class=\"glyphicon glyphicon-user\""+
        " aria-hidden=\"true\"></span> Profile</a></li><li style=\"padding-top:5px;\"><a href=\"#Resume\">" +
        " <span class=\"glyphicon glyphicon-equalizer\" aria-hidden=\"true\"></span> Resume </a></li>" +
-       " <li style=\"padding-top:5px;\"><a href=\"#Portfolio\"> <span class=\"glyphicon glyphicon-folder-open\" aria-hidden=\"true\">" +
-       " </span> Portfolio</a></li><li class=\"active\" style=\"padding-top:5px;\"><a href=\"#Contact\"> <span class=\"glyphicon glyphicon-send\" " +
+       "<!-- <li style=\"padding-top:5px;\"><a href=\"#Portfolio\"> <span class=\"glyphicon glyphicon-folder-open\" aria-hidden=\"true\">" +
+       " </span> Portfolio</a></li> --><li class=\"active\" style=\"padding-top:5px;\"><a href=\"#Contact\"> <span class=\"glyphicon glyphicon-send\" " +
        " aria-hidden=\"true\"></span> Contact</a></li>";
    }
    else{
       return "<li class=\"active\" style=\"padding-top:5px;\"> <a> <span class=\"glyphicon glyphicon-user\""+
        " aria-hidden=\"true\"></span> Profile</a></li><li style=\"padding-top:5px;\"><a href=\"#Resume\">" +
        " <span class=\"glyphicon glyphicon-equalizer\" aria-hidden=\"true\"></span> Resume </a></li>" +
-       " <li style=\"padding-top:5px;\"><a href=\"#Portfolio\"> <span class=\"glyphicon glyphicon-folder-open\" aria-hidden=\"true\">" +
-       " </span> Portfolio</a></li><li style=\"padding-top:5px;\"><a href=\"#Contact\"> <span class=\"glyphicon glyphicon-send\" " +
+       " <!-- <li style=\"padding-top:5px;\"> <a href=\"#Portfolio\"> <span class=\"glyphicon glyphicon-folder-open\" aria-hidden=\"true\">" +
+       " </span>  Portfolio</a></li> --> <li style=\"padding-top:5px;\"><a href=\"#Contact\"> <span class=\"glyphicon glyphicon-send\" " +
        " aria-hidden=\"true\"></span> Contact</a></li>";
    }
 }
@@ -243,37 +247,32 @@ function generatePorfolio(){
 
 function generateContact(){
    return "<div class=\"row\"><div class=\"col-xs-5 col-md-5\"><address><h4>Contact Info</h4><br>"+
-				contact_street + "<br>" + contact_city + "," + contact_state + " " + contact_zip + "<br>"+
-				"</address><address><strong>Jasper Forest</strong><br>Email: "+ personal_email +"<br>"+
-				"Phone: " + personal_phone + "<br>Website: jperf.github.io<br><a href=\""+
-				"https://www.linkedin.com/pub/jasper-forest/61/26/316/en\"> LinkedIn Profile</a><br>"+
-				"</address></div><div class=\"col-xs-5 col-md-6\"><p class=\"lead text-center\">"+
-				"Send me a Message!</p><form id=\"mail-form\" action=\"#Contact\">"+
-				"<div class=\"form-group\"><label for=\"nameIn\">Your Name</label><input class=" +
-				"\"form-control focusedInput\" id=\"nameIn\" required focus></div><div class=\"form-group\">"+
-				"<label for=\"emailIn\">Your Email</label><input type=\"email\" class=\"form-control\" id=\"emailIn\""+
-				" required></div><div class=\"form-group\"><label for=\"messageIn\">Your Message</label>"+
-				"<textarea style=\"max-width:555px; min-height:125px;\" class=\"form-control\" id=\"messageIn\" required>"+
-				"</textarea></div><button onclick=\"sendIt()\" type=\"submit\" class=\"btn btn-primary\">Send</button></form></div></div>";
+       contact_street + "<br>" + contact_city + "," + contact_state + " " + contact_zip + "<br>"+
+       "</address><address><strong>Jasper Forest</strong><br>Email: "+ personal_email +"<br>"+
+       "Phone: " + personal_phone + "<br>Website: jperf.github.io<br><a href=\""+
+       "https://www.linkedin.com/pub/jasper-forest/61/26/316/en\"> LinkedIn Profile</a><br>"+
+       "</address></div><div class=\"col-xs-5 col-md-6\"><p class=\"lead text-center\">"+
+       "Send me a Message!</p><form id=\"mail-form\" action=\"#Contact\">"+
+       "<div class=\"form-group\"><label for=\"nameIn\">Your Name</label><input class=" +
+       "\"form-control focusedInput\" id=\"nameIn\" required focus></div><div class=\"form-group\">"+
+       "<label for=\"emailIn\">Your Email</label><input type=\"email\" class=\"form-control\" id=\"emailIn\""+
+       " required></div><div class=\"form-group\"><label for=\"messageIn\">Your Message</label>"+
+       "<textarea style=\"max-width:555px; min-height:125px;\" class=\"form-control\" id=\"messageIn\" required>"+
+       "</textarea></div><button onclick=\"sendIt()\" type=\"submit\" class=\"btn btn-primary\">Send</button></form></div></div>"+
+       "<div id=\"php_code\"></div>";
 }
 
 function sendIt(){
-	var name = document.getElementById('nameIn').value;
-	var email = document.getElementById('emailIn').value;
-	var message = document.getElementById('messageIn').value;
-	if(name != "" && email != "" && message != "" && email.indexOf("@") > -1 && email.indexOf("@") != email.length -1){
-		var mailto_Link = "mailto:jasper@liaapp.com?subject=Message From:" +name + " | " + email + "&body=" + message;
-		win = window.open(mailto_Link, 'emailWindow');
-		if( win && win.open){
-			win.close();
-		}
-	}
-	alert('done');
+   var name = document.getElementById('nameIn').value;
+   var email = document.getElementById('emailIn').value;
+ 	var message = document.getElementById('messageIn').value;
+	console.log(name, email, message);
+
+    return false;
 }
 
 function generateProfile(){
-   return "<div class=\"row\"><div class=\"container\"><div class=\"col-xs-4 col-md-3\"><img src=\""+
-            "https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/000/228/058/3fd8472.jpg\" id=\"profile-Pic\""+
+   return "<div class=\"row\"><div class=\"container\"><div class=\"col-xs-4 col-md-3\"><img src=\"profile.jpg\" id=\"profile-Pic\""+
             " class=\"img-thumbnail\"></div><div class=\"col-xs-8 col-md-4\"><h2><strong>Jasper Forest</strong></h2>"+
             "<h4 style=\"color:primary;\">Software Developer</h4><p>" + personal_info +"</p> </div>"+
             "<div class=\"col-xs-7 col-md-4\"><br><br><ul class=\"list-unstyled\"><li>"+
@@ -282,5 +281,6 @@ function generateProfile(){
             "<div class=\"col-xs-7 col-md-6\">" + personal_email + "</div></li><li><div class=\"col-xs-5 col-md-6\">"+
             "<strong>Phone</strong></div><div class=\"col-xs-7 col-md-6\">" + personal_phone + "</div></li><li>"+
             "<div class=\"col-xs-5 col-md-6\"><strong>Hometown</strong></div><div class=\"col-xs-7 col-md-6\">"+
-            "Scotts Valley, CA</div></li></ul></div></div></div>";
+            "Scotts Valley, CA</div></li><li><div class=\"col-xs-5 col-md-6\"><strong> Current Town</strong></div>"+
+				"<div class=\"col-xs-7 col-md-6\"> San Diego, CA</div></li></ul></div></div></div>";
 }
