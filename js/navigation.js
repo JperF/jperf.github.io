@@ -258,17 +258,24 @@ function generateContact(){
        "<label for=\"emailIn\">Your Email</label><input type=\"email\" class=\"form-control\" id=\"emailIn\""+
        " required></div><div class=\"form-group\"><label for=\"messageIn\">Your Message</label>"+
        "<textarea style=\"max-width:555px; min-height:125px;\" class=\"form-control\" id=\"messageIn\" required>"+
-       "</textarea></div><button onclick=\"sendIt()\" type=\"submit\" class=\"btn btn-primary\">Send</button></form></div></div>"+
-       "<div id=\"php_code\"></div>";
+       "</textarea></div><div id=\"sendButton\"><button  onclick=\"sendIt()\" type=\"submit\" class=\"btn btn-primary\">Send</button></div></form></div></div>";
 }
 
 function sendIt(){
    var name = document.getElementById('nameIn').value;
    var email = document.getElementById('emailIn').value;
- 	var message = document.getElementById('messageIn').value;
-	console.log(name, email, message);
-
-    return false;
+   var message = document.getElementById('messageIn').value;
+   if(name && email && message) {
+		var win = window.open('mailto:'+personal_email+'?subject=Email%20from:%20'+email+'&body='+message);
+		document.getElementById('sendButton').innerHTML = "<button class=\"btn btn-success\"> Thanks for the email</button>";
+		setTimeout(function(){
+			win.close();
+		}, 100);
+		setTimeout(function(){
+			document.getElementById('sendButton').innerHTML = "<button  onclick=\"sendIt()\" type=\"submit\" class=\"btn btn-primary\">Send</button>";
+		},15000);
+	}
+   return false;
 }
 
 function generateProfile(){
