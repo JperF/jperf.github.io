@@ -270,7 +270,7 @@ function sendIt(){
 		document.getElementById('sendButton').innerHTML = "<button class=\"btn btn-success\"> Thanks for the email</button>";
 		setTimeout(function(){
 			win.close();
-		}, 100);
+		}, 200);
 		setTimeout(function(){
 			document.getElementById('sendButton').innerHTML = "<button  onclick=\"sendIt()\" type=\"submit\" class=\"btn btn-primary\">Send</button>";
 		},15000);
