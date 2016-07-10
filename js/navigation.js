@@ -14,9 +14,10 @@ var contact_city = "San Diego";
 var contact_state = "CA";
 var contact_zip = "92109";
 // Languages known
-var languages_libraries = ["Java", "JavaScript", "C",
+var languages_libraries = ["node.js", "express.js", "Redis", "JavaScript",
 			    "CSS", "HTML", "Git", "mongoDB", "angular.js",
-			   "node.js", "express", "parse DB", "ejs templates", "bootstrap.js", "jquery.js"];
+			     "ejs templates", "bootstrap.js", "jquery.js", "foundation.js",
+			     "mySQL", "cluster"];
 
 // School information
 var school_names = ["University of San Diego", "Cabrillo College"];
@@ -187,7 +188,7 @@ function genExp(){
 }
 
 function genLang(){
-	var lang = "<div class=\"container\"><h3> Languages & Libraries </h3>" + genLine() + "<ul class=\"list-unstyled\">";
+	var lang = "<div class=\"container\"><h3> Languages / Libraries / Services </h3>" + genLine() + "<ul class=\"list-unstyled\">";
 
 	for(var i = 0; i < languages_libraries.length; i++){
 		lang += "<li class=\"col-xs-4 col-md-3\">" + languages_libraries[i] + "</li>";
