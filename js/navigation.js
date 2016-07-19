@@ -33,8 +33,8 @@ var school_classes = [
 // Work information
 var work_names = ["PINT Inc.", "LIA", "University of San Diego", "University of San Diego"];
 var work_titles = ["Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
-var work_years = ["June 2015 - Present", "October 2014 - May 2015", "September 2014 - December 2014",
-		  "October 2014 - December 2014"];
+var work_years = ["June 2015 - Present", "October 2014 - May 2015", "October 2015 - December 2015",
+		  "October 2013 - May 2015"];
 var work_overview = ["JavaScript Full Stack Engineer",
 			"Quality Assurance testing the web, iOS, Android, and Window application",
 			"Tutored intro level Computer Science Students",
