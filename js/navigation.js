@@ -1,7 +1,7 @@
 /* Page navigation js */
 
 // Main javascript
-var personal_info = "Making the world a better place, one code block at a time.";
+var personal_info = 'Happily cooking code at <a href="https://www.industry.co"> Industry</a>! ';
 var personal_loc = "San Diego";
 var personal_email = '<a href="mailto:jasperforest@sandiego.edu">jasperforest@sandiego.edu</a>';
 var personal_phone = '<a href="tel:1-831-239-7476">831.239.7476</a>';
@@ -14,10 +14,9 @@ var contact_city = "San Diego";
 var contact_state = "CA";
 var contact_zip = "92109";
 // Languages known
-var languages_libraries = ["node.js", "express.js", "Redis", "JavaScript",
+var languages_libraries = ["node.js", "express.js", "JavaScript",
 			    "CSS", "HTML", "Git", "mongoDB", "angular.js",
-			     "ejs templates", "bootstrap.js", "jquery.js", "foundation.js",
-			     "mySQL", "cluster"];
+			     "ejs templates", "react.js", "mySQL", "Stripe"];
 
 // School information
 var school_names = ["University of San Diego", "Cabrillo College"];
@@ -31,15 +30,22 @@ var school_classes = [
 					];
 
 // Work information
-var work_names = ["PINT Inc.", "LIA", "University of San Diego", "University of San Diego"];
-var work_titles = ["Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
-var work_years = ["June 2015 - Present", "October 2014 - May 2015", "October 2015 - May 2015",
+var work_names = [
+	'<a href="https://www.industry.co" target="_blank">Industry</a>',
+	'<a href="https://pint.com" target="_blank">PINT Inc.</a>',
+	'<a href="http://www.liaapp.com/" target="_blank">LIA</a>',
+	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>',
+	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>'
+	];
+var work_titles = ["Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
+var work_years = ["Oct 2016 - Present", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
 		  "October 2013 - May 2015"];
-var work_overview = ["JavaScript Full Stack Engineer",
+var work_overview = ["JavaScript Full Stack Engineer", "JavaScript Full Stack Engineer",
 			"Quality Assurance testing the web, iOS, Android, and Window application",
 			"Tutored intro level Computer Science Students",
 			"Grading/Critique Homework"];
 var work_traits = [
+				["Creating next generation networking software.", "Creating interactive User interfaces with react.js.", "Implementing new features utilizing a fast pace scrum environment."],
 		   ["Building web and software applications using W3C-compliant HTML, CSS and JavaScript",
 				"Designing and implementing node.js and NoSQL-type server and database environments, as well as traditional LAMP stack applications",
 				"Provide feedback, solutions and recommendations on project direction as a member of a collaborative team"],
