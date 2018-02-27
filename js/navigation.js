@@ -9,10 +9,10 @@ var personal_resume ="forest_resume.pdf";
 
 var scroll_speed = 490;
 
-var contact_street = "Crown Point";
+var contact_street = "Market St";
 var contact_city = "San Diego";
 var contact_state = "CA";
-var contact_zip = "92109";
+var contact_zip = "92101";
 // Languages known
 var languages_libraries = ["node.js", "express.js", "JavaScript",
 			    "CSS", "HTML", "Git", "mongoDB", "angular.js",
