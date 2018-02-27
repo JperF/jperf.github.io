@@ -38,7 +38,7 @@ var work_names = [
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>'
 	];
 var work_titles = ["Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
-var work_years = ["Oct 2016 - Present", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
+var work_years = ["Oct 2016 - Feb 2018", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
 		  "October 2013 - May 2015"];
 var work_overview = ["JavaScript Full Stack Engineer", "JavaScript Full Stack Engineer",
 			"Quality Assurance testing the web, iOS, Android, and Window application",
