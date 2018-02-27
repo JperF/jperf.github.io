@@ -1,7 +1,7 @@
 /* Page navigation js */
 
 // Main javascript
-var personal_info = 'Happily cooking code at <a href="https://www.industry.co"> Industry</a>! ';
+var personal_info = 'Currently seeking employment at a great new company. Recently laid off from my last job due to lack of money.';
 var personal_loc = "San Diego";
 var personal_email = '<a href="mailto:jasperforest@sandiego.edu">jasperforest@sandiego.edu</a>';
 var personal_phone = '<a href="tel:1-831-239-7476">831.239.7476</a>';
