@@ -40,15 +40,21 @@ var work_names = [
 var work_titles = ["Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
 var work_years = ["Oct 2016 - Feb 2018", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
 		  "October 2013 - May 2015"];
-var work_overview = ["JavaScript Full Stack Engineer", "JavaScript Full Stack Engineer",
+var work_overview = ["Software Engineer", "Software Engineer",
 			"Quality Assurance testing the web, iOS, Android, and Window application",
 			"Tutored intro level Computer Science Students",
 			"Grading/Critique Homework"];
 var work_traits = [
-				["Creating next generation networking software.", "Creating interactive User interfaces with react.js.", "Implementing new features utilizing a fast pace scrum environment."],
+				["Created next generation networking software through both MERN web applications and react-native mobile apps.", 
+				 "Became the last Engineer on a team of originally 5 people, that solely managed and maintained both the web and mobile applications.",
+				"Created interactive user interfaces with react and react-native that simplified and streamlined functionality.",
+				"Implemented new features utilizing a fast pace scrum environment."],
 		   ["Building web and software applications using W3C-compliant HTML, CSS and JavaScript",
 				"Designing and implementing node.js and NoSQL-type server and database environments, as well as traditional LAMP stack applications",
-				"Provide feedback, solutions and recommendations on project direction as a member of a collaborative team"],
+				"Provide feedback, solutions and recommendations on project direction as a member of a collaborative team",
+		   "Streamlined deployment process by developing continuous integration tools.",
+		   "Built, tested and deployed scalable, highly available and modular software products.",
+		   "Modified existing software to correct errors, adapt to new hardware and improve preformance"],
 		   ["Q/A Product Testing", "Code Refactoring", "Regression Testing"],
 		   ["Helped students have a better understanding of their classes.", "Helped guide students through their programs/assignments."],
 		   ["Grade/Critique coursework from the introductory computer sceience classes", "Debuggin Programs"]
