@@ -179,7 +179,7 @@ function generateResume(){
 
 
 function genLine(){
-	return "<div class=\"shift container\"><div class=\"container col-xs-6 col-md-6 col-lg-6" +
+	return "<div class=\"shift container\"><div class=\"container col-xs-11 col-md-11 col-lg-11" +
 			" border-blue\"></div>";
 }
 
