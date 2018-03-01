@@ -3,7 +3,7 @@
 // Main javascript
 var personal_info = 'Currently seeking employment at a great new company. Recently laid off from my last job due to lack of money.';
 var personal_loc = "San Diego";
-var personal_email = '<a href="mailto:jasperforest@sandiego.edu">jasperforest@sandiego.edu</a>';
+var personal_email = '<a href="mailto:jperforest@gmail.com">jperforest@gmail.com</a>';
 var personal_phone = '<a href="tel:1-831-239-7476">831.239.7476</a>';
 var personal_resume ="forest_resume.pdf";
 
