@@ -1,7 +1,7 @@
 /* Page navigation js */
 
 // Main javascript
-var personal_info = 'Currently seeking employment at a great new company. Recently laid off from my last job due to lack of money.';
+var personal_info = 'Currently seeking employment at a great new company.';
 var personal_loc = "San Diego";
 var personal_email = '<a href="mailto:jperforest@gmail.com">jperforest@gmail.com</a>';
 var personal_phone = '<a href="tel:1-831-239-7476">831.239.7476</a>';
@@ -31,20 +31,21 @@ var school_classes = [
 
 // Work information
 var work_names = [
+	'Freelance Contractor',
 	'<a href="https://www.industry.co" target="_blank">Industry</a>',
 	'<a href="https://pint.com" target="_blank">PINT Inc.</a>',
 	'<a href="http://www.liaapp.com/" target="_blank">LIA</a>',
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>',
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>'
 	];
-var work_titles = ["Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
-var work_years = ["Oct 2016 - Feb 2018", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
+var work_titles = ['Software Engineer', "Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
+var work_years = ['Feb 2018 - Present', "Oct 2016 - Feb 2018", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
 		  "October 2013 - May 2015"];
-var work_overview = ["Full Stack Engineer | Javascript", "Full Stack Engineer | Javascript",
+var work_overview = ["Full Stack Engineer | Javascript","Full Stack Engineer | Javascript", "Full Stack Engineer | Javascript",
 			"Quality Assurance testing the web, iOS, Android, and Window application",
 			"Tutored intro level Computer Science Students",
 			"Grading/Critique Homework"];
-var work_traits = [
+var work_traits = [["Creating Angular/ React projects.","Node.js backend APIs","MongoDb/ SQL Database architecture."],
 				["Created next generation networking software through both MERN web applications and react-native mobile apps.", 
 				 "Became the last Engineer on a team of originally 5 people, that solely managed and maintained both the web and mobile applications.",
 				"Created interactive user interfaces with react and react-native that simplified and streamlined functionality.",
