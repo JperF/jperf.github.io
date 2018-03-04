@@ -31,14 +31,14 @@ var school_classes = [
 
 // Work information
 var work_names = [
-	'Freelance Contractor',
+	'<a href="https://www.trustandwill.com" target="_blank">Trust & Will</a>',
 	'<a href="https://www.industry.co" target="_blank">Industry</a>',
 	'<a href="https://pint.com" target="_blank">PINT Inc.</a>',
 	'<a href="http://www.liaapp.com/" target="_blank">LIA</a>',
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>',
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>'
 	];
-var work_titles = ['Software Engineer', "Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
+var work_titles = ['Contract Software Engineer', "Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
 var work_years = ['Feb 2018 - Present', "Oct 2016 - Feb 2018", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
 		  "October 2013 - May 2015"];
 var work_overview = ["Full Stack Engineer | Javascript","Full Stack Engineer | Javascript", "Full Stack Engineer | Javascript",
