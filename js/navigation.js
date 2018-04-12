@@ -31,7 +31,7 @@ var school_classes = [
 
 // Work information
 var work_names = [
-	'<a href="https://www.sportoco.com" target="_blank">Sportoco</a>',
+	'<a href="http://sporto.co/" target="_blank">Sportoco</a>',
 	'<a href="https://www.trustandwill.com" target="_blank">Trust & Will</a>',
 	'<a href="https://www.industry.co" target="_blank">Industry</a>',
 	'<a href="https://pint.com" target="_blank">PINT Inc.</a>',
