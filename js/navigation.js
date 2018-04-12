@@ -38,14 +38,14 @@ var work_names = [
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>',
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>'
 	];
-var work_titles = ['Contract Software Engineer', "Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
-var work_years = ['Feb 2018 - Present', "Oct 2016 - Feb 2018", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
+var work_titles = ['Chief Programmer and Development Architect','Contract Software Engineer', "Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
+var work_years = ['March 2018 - Present', 'Feb 2018 - March 2018', "Oct 2016 - Feb 2018", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
 		  "October 2013 - May 2015"];
-var work_overview = ["Full Stack Engineer | Javascript","Full Stack Engineer | Javascript", "Full Stack Engineer | Javascript",
+var work_overview = ["Full Stack Engineer | Javascript" , "Full Stack Engineer | Javascript","Full Stack Engineer | Javascript", "Full Stack Engineer | Javascript",
 			"Quality Assurance testing the web, iOS, Android, and Window application",
 			"Tutored intro level Computer Science Students",
 			"Grading/Critique Homework"];
-var work_traits = [["Creating Angular/ React projects.","Node.js backend APIs","MongoDb/ SQL Database architecture."],
+var work_traits = [["Create the nextGen React Applciations"],["Creating Angular/ React projects.","Node.js backend APIs","MongoDb/ SQL Database architecture."],
 				["Created next generation networking software through both MERN web applications and react-native mobile apps.", 
 				 "Became the last Engineer on a team of originally 5 people, that solely managed and maintained both the web and mobile applications.",
 				"Created interactive user interfaces with react and react-native that simplified and streamlined functionality.",
