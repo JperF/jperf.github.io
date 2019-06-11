@@ -31,6 +31,7 @@ var school_classes = [
 
 // Work information
 var work_names = [
+  '<a href="https://www.lawmatics.com" target="_blank">Lawmatics</a>',
 	'<a href="http://sporto.co/" target="_blank">Sportoco</a>',
 	'<a href="https://www.trustandwill.com" target="_blank">Trust & Will</a>',
 	'<a href="https://www.industry.co" target="_blank">Industry</a>',
@@ -39,28 +40,53 @@ var work_names = [
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>',
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>'
 	];
-var work_titles = ['Chief Programmer and Development Architect','Contract Software Engineer', "Software Engineer", "Software Engineer", "Software Intern", "Computer Science Tutor", "Teaching Assistant"];
-var work_years = ['March 2018 - Present', 'Feb 2018 - March 2018', "Oct 2016 - Feb 2018", "June 2015 - Oct 2016", "October 2014 - May 2015", "October 2015 - May 2015",
-		  "October 2013 - May 2015"];
-var work_overview = ["Full Stack Engineer | Javascript" , "Full Stack Engineer | Javascript","Full Stack Engineer | Javascript", "Full Stack Engineer | Javascript",
-			"Quality Assurance testing the web, iOS, Android, and Window application",
-			"Tutored intro level Computer Science Students",
-			"Grading/Critique Homework"];
-var work_traits = [["Create the nextGen React Applciations"],["Creating Angular/ React projects.","Node.js backend APIs","MongoDb/ SQL Database architecture."],
-				["Created next generation networking software through both MERN web applications and react-native mobile apps.", 
-				 "Became the last Engineer on a team of originally 5 people, that solely managed and maintained both the web and mobile applications.",
-				"Created interactive user interfaces with react and react-native that simplified and streamlined functionality.",
-				"Implemented new features utilizing a fast pace scrum environment."],
-		   ["Building web and software applications using W3C-compliant HTML, CSS and JavaScript",
-				"Designing and implementing node.js and NoSQL-type server and database environments, as well as traditional LAMP stack applications",
-				"Provide feedback, solutions and recommendations on project direction as a member of a collaborative team",
-		   "Streamlined deployment process by developing continuous integration tools.",
-		   "Built, tested and deployed scalable, highly available and modular software products.",
-		   "Modified existing software to correct errors, adapt to new hardware and improve preformance"],
-		   ["Q/A Product Testing", "Code Refactoring", "Regression Testing"],
-		   ["Helped students have a better understanding of their classes.", "Helped guide students through their programs/assignments."],
-		   ["Grade/Critique coursework from the introductory computer sceience classes", "Debuggin Programs"]
-		   ];
+var work_titles = ['Software Enigneer',
+  'Chief Programmer and Development Architect',
+  'Contract Software Engineer',
+  "Software Engineer",
+  "Software Engineer",
+  "Software Intern",
+  "Computer Science Tutor",
+  "Teaching Assistant"
+];
+
+var work_years = ['June 2018 - Present',
+  'March 2018 - June 2018',
+  'Feb 2018 - March 2018',
+  "Oct 2016 - Feb 2018",
+  "June 2015 - Oct 2016",
+  "October 2014 - May 2015",
+  "October 2015 - May 2015",
+  "October 2013 - May 2015"
+];
+
+var work_overview = ["Full Stack Engineer",
+  "Full Stack Engineer | Javascript",
+  "Full Stack Engineer | Javascript",
+  "Full Stack Engineer | Javascript",
+  "Full Stack Engineer | Javascript",
+  "Quality Assurance testing the web, iOS, Android, and Window application",
+  "Tutored intro level Computer Science Students",
+  "Grading/Critique Homework"
+];
+
+var work_traits = [["Develop and test user stories off the product backlog•Develop frontend UI","Develop backend database and API","Learn and Manage Devops environment","Assist other engineers in various engineering tasks, i.e. ui, tests"],
+  ["Create the nextGen React Applications", "Helped architect / Design initial frame work for their project", "Managed lower level engineers"],
+  ["Creating Angular/ React projects.","Node.js backend APIs","MongoDb/ SQL Database architecture."],
+	["Created next generation networking software through both MERN web applications and react-native mobile apps.",
+    "Became the last Engineer on a team of originally 5 people, that solely managed and maintained both the web and mobile applications.",
+		"Created interactive user interfaces with react and react-native that simplified and streamlined functionality.",
+		"Implemented new features utilizing a fast pace scrum environment."],
+  ["Building web and software applications using W3C-compliant HTML, CSS and JavaScript",
+		"Designing and implementing node.js and NoSQL-type server and database environments, as well as traditional LAMP stack applications",
+		"Provide feedback, solutions and recommendations on project direction as a member of a collaborative team",
+    "Streamlined deployment process by developing continuous integration tools.",
+    "Built, tested and deployed scalable, highly available and modular software products.",
+    "Modified existing software to correct errors, adapt to new hardware and improve preformance"],
+  ["Q/A Product Testing", "Code Refactoring", "Regression Testing"],
+  ["Helped students have a better understanding of their classes.", "Helped guide students through their programs/assignments."],
+  ["Grade/Critique coursework from the introductory computer sceience classes", "Debuggin Programs"]
+];
 
 // Project information
 var project_names = ["E-commerce WebApp"];
