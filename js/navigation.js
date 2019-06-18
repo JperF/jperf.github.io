@@ -290,7 +290,8 @@ function generateContact(){
    return "<div class=\"row\"><div class=\"col-xs-5 col-md-5\"><address><h4>Contact Info</h4><br>"+
        contact_street + "<br>" + contact_city + "," + contact_state + " " + contact_zip + "<br>"+
        "</address><address><strong>Jasper Forest</strong><br>Email: "+ personal_email +"<br>"+
-       "Phone: " + personal_phone + "<br><a href=\"https://www.github.com/jperf\">Github Profile</a><br><a href=\""+
+       // "Phone: " + personal_phone + "<br><a href=\"https://www.github.com/jperf\">Github Profile</a><br>"+
+       "<a href=\""+
        "https://www.linkedin.com/pub/jasper-forest/61/26/316/en\"> LinkedIn Profile</a><br>"+
        "</address></div>";//<div class=\"col-xs-5 col-md-6\"><p class=\"lead text-center\">"+
        // "Send me a Message!</p><form id=\"mail-form\" action=\"#Contact\">"+
