@@ -1,8 +1,8 @@
 /* Page navigation js */
 
 // Main javascript
-var personal_info = 'Currently seeking employment at a great new company.';
-var personal_loc = "San Diego";
+var personal_info = 'Currently working at <a target=\"_blank\" href=\"https://www.lawmatics.com\">Lawmatics</a> and creating the next great software for law firms.';
+var personal_location = "San Diego";
 var personal_email = '<a href="mailto:jperforest@gmail.com">jperforest@gmail.com</a>';
 var personal_phone = '<a href="tel:1-831-239-7476">831.239.7476</a>';
 var personal_resume ="forest_resume.pdf";
@@ -326,10 +326,14 @@ function generateProfile(){
             "<h4 style=\"color:primary;\">Software Developer</h4><p>" + personal_info +"</p> </div>"+
             "<div class=\"col-xs-7 col-md-4\"><br><br><ul class=\"list-unstyled\"><li>"+
             "<div class=\"col-xs-5 col-md-6\"><strong>Location</strong></div><div class=\"col-xs-7 col-md-6\">"+
-            personal_loc + "</div></li><li><div class=\"col-xs-5 col-md-6\"><strong>Email</strong></div>"+
-            "<div class=\"col-xs-7 col-md-6\">" + personal_email + "</div></li><li><div class=\"col-xs-5 col-md-6\">"+
-            "<strong>Phone</strong></div><div class=\"col-xs-7 col-md-6\">" + personal_phone + "</div></li><li>"+
+            personal_location + "</div></li><li><div class=\"col-xs-5 col-md-6\"><strong>Email</strong></div>"+
+            "<div class=\"col-xs-7 col-md-6\">" + personal_email + "</div></li>"+
+            // "<li><div class=\"col-xs-5 col-md-6\">"+
+            // "<strong>Phone</strong></div><div class=\"col-xs-7 col-md-6\">" + personal_phone + "</div></li>"+
+            "<li>"+
             "<div class=\"col-xs-5 col-md-6\"><strong>Hometown</strong></div><div class=\"col-xs-7 col-md-6\">"+
-            "Scotts Valley, CA</div></li><li><div class=\"col-xs-5 col-md-6\"><strong> Current Town</strong></div>"+
-				"<div class=\"col-xs-7 col-md-6\"> San Diego, CA</div></li></ul></div></div></div>";
+            "Scotts Valley, CA</div></li><li>"+
+            // "<div class=\"col-xs-5 col-md-6\"><strong> Current Town</strong></div>"+
+				// "<div class=\"col-xs-7 col-md-6\"> San Diego, CA</div></li>"+
+        "</ul></div></div></div>";
 }
