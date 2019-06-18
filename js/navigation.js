@@ -41,8 +41,8 @@ var work_names = [
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>'
 	];
 var work_titles = ['Software Enigneer',
-  'Chief Programmer and Development Architect (Contract)',
-  'Software Engineer (Contract)',
+  'Chief Programmer and Development Architect',
+  'Software Engineer',
   "Software Engineer",
   "Software Engineer",
   "Software Intern",
@@ -61,8 +61,8 @@ var work_years = ['June 2018 - Present',
 ];
 
 var work_overview = ["Full Stack Engineer",
-  "Full Stack Engineer | Javascript",
-  "Full Stack Engineer | Javascript",
+  "(Contract) Full Stack Engineer",
+  "(Contract) Full Stack Engineer",
   "Full Stack Engineer | Javascript",
   "Full Stack Engineer | Javascript",
   "Quality Assurance testing the web, iOS, Android, and Window application",
