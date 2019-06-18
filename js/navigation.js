@@ -41,8 +41,8 @@ var work_names = [
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>'
 	];
 var work_titles = ['Software Enigneer',
-  'Chief Programmer and Development Architect',
-  'Contract Software Engineer',
+  'Chief Programmer and Development Architect (Contract)',
+  'Software Engineer (Contract)',
   "Software Engineer",
   "Software Engineer",
   "Software Intern",
