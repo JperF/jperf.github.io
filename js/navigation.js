@@ -16,7 +16,7 @@ var contact_zip = "92101";
 // Languages known
 var languages_libraries = ["node.js", "express.js", "JavaScript",
 			    "CSS", "HTML", "Git", "mongoDB", "angular.js",
-			     "ejs templates", "react.js", "mySQL", "Stripe"];
+			     "react native", "react.js", "mySQL", "Stripe"];
 
 // School information
 var school_names = ["University of San Diego", "Cabrillo College"];
