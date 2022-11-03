@@ -31,6 +31,8 @@ var school_classes = [
 
 // Work information
 var work_names = [
+  '<a href="https://www.thentwrk.com" target="_blank">NTWRK</a>',
+  '<a href="https://www.inertiasystems.com" target="_blank">Inertia Systems</a>',
   '<a href="https://www.lawmatics.com" target="_blank">Lawmatics</a>',
 	'<a href="http://sporto.co/" target="_blank">Sportoco</a>',
 	'<a href="https://www.trustandwill.com" target="_blank">Trust & Will</a>',
@@ -40,7 +42,9 @@ var work_names = [
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>',
 	'<a href="https://www.sandiego.edu/" target="_blank"> University of San Diego</a>'
 	];
-var work_titles = ['Software Enigneer',
+var work_titles = ['Senior Software Engineer',
+	'Lead Mobile Application Developer',
+  'Software Enigneer',
   'Chief Programmer and Development Architect',
   'Software Engineer',
   "Software Engineer",
@@ -50,7 +54,7 @@ var work_titles = ['Software Enigneer',
   "Teaching Assistant"
 ];
 
-var work_years = ['June 2018 - Present',
+var work_years = ['Aug 2020 - Present', 'Feb 2020 - Aug 2020','June 2018 - Feb 2020',
   'March 2018 - June 2018',
   'Feb 2018 - March 2018',
   "Oct 2016 - Feb 2018",
@@ -60,7 +64,7 @@ var work_years = ['June 2018 - Present',
   "October 2013 - May 2015"
 ];
 
-var work_overview = ["Full Stack Engineer",
+var work_overview = ["Full Stack Engineer","Mobile Developer","Full Stack Engineer",
   "(Contract) Full Stack Engineer",
   "(Contract) Full Stack Engineer",
   "Full Stack Engineer | Javascript",
@@ -70,7 +74,12 @@ var work_overview = ["Full Stack Engineer",
   "Grading/Critique Homework"
 ];
 
-var work_traits = [["Develop and test user stories off the product backlog•Develop frontend UI","Develop backend database and API","Learn and Manage Devops environment","Assist other engineers in various engineering tasks, i.e. ui, tests"],
+var work_traits = [
+	["Work at all levels of the stack, from React/React Native+HTML+CSS to AWS+Go+SQL",
+"Take full ownership and responsibility for building, shipping, and maintaining features."],
+	["Main React Native Developer building Inertia System Mobile application from the ground up",
+"Building software to organize, manage and maintain construction projects"],
+	["Develop and test user stories off the product backlog•Develop frontend UI","Develop backend database and API","Learn and Manage Devops environment","Assist other engineers in various engineering tasks, i.e. ui, tests"],
   ["Create the nextGen React Applications", "Helped architect / Design initial frame work for their project", "Managed lower level engineers"],
   ["Creating Angular/ React projects.","Node.js backend APIs","MongoDb/ SQL Database architecture."],
 	["Created next generation networking software through both MERN web applications and react-native mobile apps.",
