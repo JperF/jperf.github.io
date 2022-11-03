@@ -1,10 +1,9 @@
 /* Page navigation js */
 
 // Main javascript
-var personal_info = 'Currently working at <a target=\"_blank\" href=\"https://www.lawmatics.com\">Lawmatics</a> and creating the next great software for law firms.';
+var personal_info = 'Currently working at <a target=\"_blank\" href=\"https://www.thentwrk.com\">NTWRK</a> and creating the next #1 Live Stream shopping application.';
 var personal_location = "San Diego";
 var personal_email = '<a href="mailto:jperforest@gmail.com">jperforest@gmail.com</a>';
-var personal_phone = '<a href="tel:1-831-239-7476">831.239.7476</a>';
 var personal_resume ="forest_resume.pdf";
 
 var scroll_speed = 490;
@@ -299,17 +298,9 @@ function generateContact(){
    return "<div class=\"row\"><div class=\"col-xs-5 col-md-5\"><address><h4>Contact Info</h4><br>"+
        contact_street + "<br>" + contact_city + "," + contact_state + " " + contact_zip + "<br>"+
        "</address><address><strong>Jasper Forest</strong><br>Email: "+ personal_email +"<br>"+
-       // "Phone: " + personal_phone + "<br><a href=\"https://www.github.com/jperf\">Github Profile</a><br>"+
        "<a href=\""+
        "https://www.linkedin.com/pub/jasper-forest/61/26/316/en\"> LinkedIn Profile</a><br>"+
-       "</address></div>";//<div class=\"col-xs-5 col-md-6\"><p class=\"lead text-center\">"+
-       // "Send me a Message!</p><form id=\"mail-form\" action=\"#Contact\">"+
-       // "<div class=\"form-group\"><label for=\"nameIn\">Your Name</label><input class=" +
-       // "\"form-control focusedInput\" id=\"nameIn\" required focus></div><div class=\"form-group\">"+
-       // "<label for=\"emailIn\">Your Email</label><input type=\"email\" class=\"form-control\" id=\"emailIn\""+
-       // " required></div><div class=\"form-group\"><label for=\"messageIn\">Your Message</label>"+
-       // "<textarea style=\"max-width:555px; min-height:125px;\" class=\"form-control\" id=\"messageIn\" required>"+
-       // "</textarea></div><div id=\"sendButton\"><button  onclick=\"sendIt()\" type=\"submit\" class=\"btn btn-primary\">Send</button></div></form></div></div>";
+       "</address></div>";
 }
 
 function sendIt(){
